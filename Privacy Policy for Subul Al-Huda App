@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>سياسة الخصوصية – سبل الهدى</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+      background: #0f1117;
+      color: #e8e0cc;
+      line-height: 1.9;
+      padding: 0 16px 60px;
+    }
+
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 0 40px;
+      border-bottom: 1px solid #2a2f3d;
+      margin-bottom: 48px;
+    }
+
+    .logo-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 72px; height: 72px;
+      border-radius: 20px;
+      background: linear-gradient(135deg, #1c2333, #252d40);
+      border: 1.5px solid #b8962a;
+      margin-bottom: 20px;
+      font-size: 32px;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 800;
+      background: linear-gradient(90deg, #f5e4a8, #e8c97a, #b8962a);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      color: #6b7a96;
+      font-size: 14px;
+    }
+
+    .last-updated {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 4px 14px;
+      border-radius: 20px;
+      background: #1c2333;
+      border: 1px solid #2a2f3d;
+      font-size: 13px;
+      color: #8b9ab0;
+    }
+
+    section {
+      background: #161b22;
+      border: 1px solid #21283a;
+      border-radius: 16px;
+      padding: 28px 32px;
+      margin-bottom: 20px;
+      transition: border-color 0.2s;
+    }
+
+    section:hover {
+      border-color: #b8962a44;
+    }
+
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #e8c97a;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h2 .icon {
+      font-size: 20px;
+      filter: none;
+    }
+
+    p { color: #c8c0b0; font-size: 15px; margin-bottom: 10px; }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 8px;
+    }
+
+    ul li {
+      color: #c8c0b0;
+      font-size: 15px;
+      padding: 6px 0;
+      border-bottom: 1px solid #1c2333;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    ul li:last-child { border-bottom: none; }
+
+    ul li::before {
+      content: "◆";
+      color: #e8c97a;
+      font-size: 8px;
+      margin-top: 7px;
+      flex-shrink: 0;
+    }
+
+    .highlight-box {
+      background: #1a2235;
+      border: 1px solid #e8c97a33;
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin-top: 12px;
+    }
+
+    .highlight-box p {
+      color: #e8d8a0;
+      margin: 0;
+      font-size: 14px;
+    }
+
+    .contact-box {
+      text-align: center;
+      padding: 32px;
+      background: linear-gradient(135deg, #161b22, #1c2333);
+      border: 1px solid #e8c97a44;
+      border-radius: 16px;
+      margin-top: 32px;
+    }
+
+    .contact-box h2 { justify-content: center; }
+
+    .contact-email {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 10px 24px;
+      background: #e8c97a;
+      color: #0f1117;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 15px;
+      text-decoration: none;
+      direction: ltr;
+    }
+
+    .lang-switch {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    .lang-btn {
+      display: inline-block;
+      padding: 8px 20px;
+      margin: 4px;
+      border-radius: 8px;
+      background: #1c2333;
+      border: 1px solid #2a2f3d;
+      color: #8b9ab0;
+      cursor: pointer;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    .lang-btn.active {
+      background: #e8c97a22;
+      border-color: #e8c97a;
+      color: #e8c97a;
+    }
+
+    .en-section { display: none; }
+
+    footer {
+      text-align: center;
+      padding-top: 40px;
+      color: #3a4255;
+      font-size: 13px;
+    }
+
+    .divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #e8c97a44, transparent);
+      margin: 40px 0;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <div class="logo-badge">🕌</div>
+    <h1>سبل الهدى</h1>
+    <p class="subtitle">Subul Al-Huda — Islamic Companion App</p>
+    <span class="last-updated">آخر تحديث: مارس 2026</span>
+  </header>
+
+  <!-- Language Switch -->
+  <div class="lang-switch">
+    <a class="lang-btn active" onclick="showAr()" href="#">🇸🇦 العربية</a>
+    <a class="lang-btn" onclick="showEn()" href="#">🇬🇧 English</a>
+  </div>
+
+  <!-- =================== ARABIC =================== -->
+  <div id="ar-content">
+
+    <section>
+      <h2><span class="icon">📋</span> مقدمة</h2>
+      <p>
+        نرحب بك في تطبيق <strong>سبل الهدى</strong>. نحن نحترم خصوصيتك ونلتزم بحماية بياناتك الشخصية.
+        توضح هذه السياسة كيفية تعاملنا مع المعلومات عند استخدامك لتطبيقنا.
+      </p>
+      <div class="highlight-box">
+        <p>✅ تطبيق سبل الهدى <strong>لا يجمع ولا يخزن أي بيانات شخصية</strong> على خوادمنا.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2><span class="icon">📦</span> البيانات التي نستخدمها</h2>
+      <p>التطبيق يستخدم الأذونات التالية فقط لتشغيل ميزاته:</p>
+      <ul>
+        <li><strong>الموقع الجغرافي:</strong> لتحديد أوقات الصلاة الدقيقة واتجاه القبلة. لا يُرسل موقعك لأي خادم.</li>
+        <li><strong>الميكروفون:</strong> لميزة الحفظ بالصوت فقط. الصوت يُعالَج محلياً على جهازك ولا يُخزَّن.</li>
+        <li><strong>الإشعارات:</strong> لإرسال تنبيهات أوقات الصلاة والأذان.</li>
+        <li><strong>الإنترنت:</strong> لتحميل وعرض الكتب .</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><span class="icon">🔒</span> ما لا نفعله أبداً</h2>
+      <ul>
+        <li>لا نجمع بياناتك الشخصية أو نخزنها على خوادمنا.</li>
+        <li>لا نبيع أو نشارك أي معلومات مع أطراف ثالثة.</li>
+        <li>لا نتتبع سلوكك داخل التطبيق لأغراض تجارية.</li>
+        <li>لا نطلب تسجيل حساب أو بريد إلكتروني.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><span class="icon">🌐</span> خدمات الطرف الثالث</h2>
+      <p>قد يستخدم التطبيق الخدمات التالية التي لها سياسات خصوصية خاصة بها:</p>
+      <ul>
+        <li><strong>Google Play Services:</strong> لتشغيل التطبيق على أجهزة Android.</li>
+        <li><strong>خدمة الطقس:</strong> لعرض الكتب .</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><span class="icon">👶</span> خصوصية الأطفال</h2>
+      <p>
+        تطبيق سبل الهدى مناسب لجميع الأعمار. نحن لا نجمع أي بيانات من أي مستخدم
+        بمن فيهم الأطفال دون سن 13 عاماً.
+      </p>
+    </section>
+
+    <section>
+      <h2><span class="icon">🔄</span> التحديثات على هذه السياسة</h2>
+      <p>
+        قد نقوم بتحديث سياسة الخصوصية من وقت لآخر. سيتم إشعارك بأي تغييرات جوهرية
+        عبر التطبيق. استمرارك في استخدام التطبيق بعد التحديث يعني موافقتك على السياسة الجديدة.
+      </p>
+    </section>
+
+  </div>
+  <!-- =================== END ARABIC =================== -->
+
+  <!-- =================== ENGLISH =================== -->
+  <div id="en-content" class="en-section">
+
+    <section>
+      <h2><span class="icon">📋</span> Introduction</h2>
+      <p>
+        Welcome to <strong>Subul Al-Huda</strong>. We respect your privacy and are committed to protecting your personal data.
+        This policy explains how we handle information when you use our app.
+      </p>
+      <div class="highlight-box">
+        <p>✅ Subul Al-Huda <strong>does not collect or store any personal data</strong> on our servers.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2><span class="icon">📦</span> Data We Access</h2>
+      <p>The app uses the following permissions only to operate its features:</p>
+      <ul>
+        <li><strong>Location:</strong> To calculate accurate prayer times and Qibla direction. Your location is never sent to any server.</li>
+        <li><strong>Microphone:</strong> For the voice memorization feature only. Audio is processed locally on your device and never stored.</li>
+        <li><strong>Notifications:</strong> To send prayer time and Adhan reminders.</li>
+        <li><strong>Internet:</strong> To download and view books.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><span class="icon">🔒</span> What We Never Do</h2>
+      <ul>
+        <li>We do not collect or store your personal data on our servers.</li>
+        <li>We do not sell or share any information with third parties.</li>
+        <li>We do not track your behavior for commercial purposes.</li>
+        <li>We do not require account registration or email.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><span class="icon">🌐</span> Third-Party Services</h2>
+      <p>The app may use the following services which have their own privacy policies:</p>
+      <ul>
+        <li><strong>Google Play Services:</strong> To run the app on Android devices.</li>
+        <li><strong>Weather Service:</strong> To view books.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><span class="icon">👶</span> Children's Privacy</h2>
+      <p>
+        Subul Al-Huda is suitable for all ages. We do not collect any data from any user,
+        including children under 13 years of age.
+      </p>
+    </section>
+
+    <section>
+      <h2><span class="icon">🔄</span> Updates to This Policy</h2>
+      <p>
+        We may update this Privacy Policy from time to time. You will be notified of any significant changes
+        through the app. Continued use of the app after updates means you accept the new policy.
+      </p>
+    </section>
+
+  </div>
+  <!-- =================== END ENGLISH =================== -->
+
+  <div class="divider"></div>
+
+  <!-- Contact -->
+  <div class="contact-box">
+    <h2><span class="icon">✉️</span> تواصل معنا / Contact Us</h2>
+    <p style="color:#8b9ab0; font-size:14px; margin-top:8px;">
+      لأي استفسار بخصوص الخصوصية — For any privacy inquiries
+    </p>
+     <a class="contact-email" href="mailto:your@email.com">souboulalhouda@gmail.com</a>
+  </div>
+
+  <footer>
+    <p>© 2026 سبل الهدى – Subul Al-Huda. All rights reserved.</p>
+    <p style="margin-top:6px;">جميع الحقوق محفوظة</p>
+  </footer>
+
+</div>
+
+<script>
+  function showAr() {
+    document.getElementById('ar-content').style.display = 'block';
+    document.getElementById('en-content').style.display = 'none';
+    document.querySelectorAll('.lang-btn')[0].classList.add('active');
+    document.querySelectorAll('.lang-btn')[1].classList.remove('active');
+    return false;
+  }
+  function showEn() {
+    document.getElementById('ar-content').style.display = 'none';
+    document.getElementById('en-content').style.display = 'block';
+    document.querySelectorAll('.lang-btn')[0].classList.remove('active');
+    document.querySelectorAll('.lang-btn')[1].classList.add('active');
+    return false;
+  }
+</script>
+</body>
+</html>
