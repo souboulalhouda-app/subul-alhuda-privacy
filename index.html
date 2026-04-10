@@ -15,6 +15,16 @@
       padding: 0 16px 60px;
     }
 
+    /* Support for LTR languages */
+    [lang="en"], [lang="fr"], [lang="tr"] {
+      direction: ltr;
+      text-align: left;
+    }
+    
+    [lang="en"] ul li, [lang="fr"] ul li, [lang="tr"] ul li {
+      padding-left: 0;
+    }
+
     .container {
       max-width: 780px;
       margin: 0 auto;
@@ -162,12 +172,15 @@
     .lang-switch {
       text-align: center;
       margin-bottom: 32px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
     }
 
     .lang-btn {
       display: inline-block;
       padding: 8px 20px;
-      margin: 4px;
       border-radius: 8px;
       background: #1c2333;
       border: 1px solid #2a2f3d;
@@ -175,6 +188,11 @@
       cursor: pointer;
       font-size: 14px;
       text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .lang-btn:hover {
+      background: #252d40;
     }
 
     .lang-btn.active {
@@ -183,7 +201,8 @@
       color: #e8c97a;
     }
 
-    .en-section { display: none; }
+    .lang-section { display: none; }
+    .lang-section.active { display: block; }
 
     footer {
       text-align: center;
@@ -211,12 +230,14 @@
 
   <!-- Language Switch -->
   <div class="lang-switch">
-    <a class="lang-btn active" onclick="showAr()" href="#">🇸🇦 العربية</a>
-    <a class="lang-btn" onclick="showEn()" href="#">🇬🇧 English</a>
+    <a class="lang-btn active" onclick="switchLanguage('ar')" href="javascript:void(0);">🇸🇦 العربية</a>
+    <a class="lang-btn" onclick="switchLanguage('en')" href="javascript:void(0);">🇬🇧 English</a>
+    <a class="lang-btn" onclick="switchLanguage('fr')" href="javascript:void(0);">🇫🇷 Français</a>
+    <a class="lang-btn" onclick="switchLanguage('tr')" href="javascript:void(0);">🇹🇷 Türkçe</a>
   </div>
 
   <!-- =================== ARABIC =================== -->
-  <div id="ar-content">
+  <div id="ar-content" class="lang-section active" lang="ar">
 
     <section>
       <h2><span class="icon">📋</span> مقدمة</h2>
@@ -236,7 +257,7 @@
         <li><strong>الموقع الجغرافي:</strong> لتحديد أوقات الصلاة الدقيقة واتجاه القبلة. لا يُرسل موقعك لأي خادم.</li>
         <li><strong>الميكروفون:</strong> لميزة الحفظ بالصوت فقط. الصوت يُعالَج محلياً على جهازك ولا يُخزَّن.</li>
         <li><strong>الإشعارات:</strong> لإرسال تنبيهات أوقات الصلاة والأذان.</li>
-        <li><strong>الإنترنت:</strong> لتحميل وعرض الكتب .</li>
+        <li><strong>الإنترنت:</strong> لتحميل وعرض الكتب.</li>
       </ul>
     </section>
 
@@ -255,7 +276,7 @@
       <p>قد يستخدم التطبيق الخدمات التالية التي لها سياسات خصوصية خاصة بها:</p>
       <ul>
         <li><strong>Google Play Services:</strong> لتشغيل التطبيق على أجهزة Android.</li>
-        <li><strong>خدمة الطقس:</strong> لعرض الكتب .</li>
+        <li><strong>خدمة الطقس:</strong> لعرض الطقس.</li>
       </ul>
     </section>
 
@@ -279,7 +300,7 @@
   <!-- =================== END ARABIC =================== -->
 
   <!-- =================== ENGLISH =================== -->
-  <div id="en-content" class="en-section">
+  <div id="en-content" class="lang-section" lang="en">
 
     <section>
       <h2><span class="icon">📋</span> Introduction</h2>
@@ -318,7 +339,7 @@
       <p>The app may use the following services which have their own privacy policies:</p>
       <ul>
         <li><strong>Google Play Services:</strong> To run the app on Android devices.</li>
-        <li><strong>Weather Service:</strong> To view books.</li>
+        <li><strong>Weather Service:</strong> To view the weather.</li>
       </ul>
     </section>
 
@@ -341,6 +362,132 @@
   </div>
   <!-- =================== END ENGLISH =================== -->
 
+  <!-- =================== FRENCH =================== -->
+  <div id="fr-content" class="lang-section" lang="fr">
+
+    <section>
+      <h2><span class="icon">📋</span> Introduction</h2>
+      <p>
+        Bienvenue dans <strong>Subul Al-Huda</strong>. Nous respectons votre vie privée et nous nous engageons à protéger vos données personnelles.
+        Cette politique explique comment nous traitons les informations lorsque vous utilisez notre application.
+      </p>
+      <div class="highlight-box">
+        <p>✅ L'application Subul Al-Huda <strong>ne collecte ni ne stocke aucune donnée personnelle</strong> sur nos serveurs.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2><span class="icon">📦</span> Données auxquelles nous accédons</h2>
+      <p>L'application utilise les autorisations suivantes uniquement pour faire fonctionner ses fonctionnalités :</p>
+      <ul>
+        <li><strong>Localisation :</strong> Pour calculer les heures de prière exactes et la direction de la Qibla. Votre position n'est jamais envoyée à aucun serveur.</li>
+        <li><strong>Microphone :</strong> Uniquement pour la fonctionnalité de mémorisation vocale. L'audio est traité localement sur votre appareil et n'est jamais stocké.</li>
+        <li><strong>Notifications :</strong> Pour envoyer des rappels d'heures de prière et d'Adhan.</li>
+        <li><strong>Internet :</strong> Pour télécharger et afficher des livres.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><span class="icon">🔒</span> Ce que nous ne faisons jamais</h2>
+      <ul>
+        <li>Nous ne collectons ni ne stockons vos données personnelles sur nos serveurs.</li>
+        <li>Nous ne vendons ni ne partageons aucune information avec des tiers.</li>
+        <li>Nous ne suivons pas votre comportement à des fins commerciales.</li>
+        <li>Nous ne demandons pas d'enregistrement de compte ni d'adresse e-mail.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><span class="icon">🌐</span> Services Tiers</h2>
+      <p>L'application peut utiliser les services suivants qui ont leurs propres politiques de confidentialité :</p>
+      <ul>
+        <li><strong>Google Play Services :</strong> Pour exécuter l'application sur les appareils Android.</li>
+        <li><strong>Service Météo :</strong> Pour afficher la météo.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><span class="icon">👶</span> Confidentialité des enfants</h2>
+      <p>
+        Subul Al-Huda convient à tous les âges. Nous ne collectons aucune donnée d'aucun utilisateur,
+        y compris les enfants de moins de 13 ans.
+      </p>
+    </section>
+
+    <section>
+      <h2><span class="icon">🔄</span> Mises à jour de cette politique</h2>
+      <p>
+        Nous pouvons mettre à jour cette politique de confidentialité de temps à autre. Vous serez informé de tout changement important
+        via l'application. Votre utilisation continue de l'application après les modifications signifie que vous acceptez la nouvelle politique.
+      </p>
+    </section>
+
+  </div>
+  <!-- =================== END FRENCH =================== -->
+
+  <!-- =================== TURKISH =================== -->
+  <div id="tr-content" class="lang-section" lang="tr">
+
+    <section>
+      <h2><span class="icon">📋</span> Giriş</h2>
+      <p>
+        <strong>Subul Al-Huda</strong>'ya hoş geldiniz. Gizliliğinize saygı duyuyoruz ve kişisel verilerinizi korumayı taahhüt ediyoruz.
+        Bu politika, uygulamamızı kullandığınızda bilgileri nasıl işlediğimizi açıklar.
+      </p>
+      <div class="highlight-box">
+        <p>✅ Subul Al-Huda uygulaması <strong>hiçbir kişisel veriyi toplamaz veya sunucularımızda saklamaz</strong>.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2><span class="icon">📦</span> Eriştiğimiz Veriler</h2>
+      <p>Uygulama, özellikleri çalıştırmak için yalnızca aşağıdaki izinleri kullanır:</p>
+      <ul>
+        <li><strong>Konum:</strong> Doğru namaz vakitlerini ve Kıble yönünü hesaplamak için. Konumunuz hiçbir sunucuya gönderilmez.</li>
+        <li><strong>Mikrofon:</strong> Sadece sesli ezberleme özelliği içindir. Ses cihazınızda yerel olarak işlenir ve asla saklanmaz.</li>
+        <li><strong>Bildirimler:</strong> Namaz vakti ve Ezan hatırlatıcıları göndermek için.</li>
+        <li><strong>İnternet:</strong> Kitapları indirmek ve görüntülemek için.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><span class="icon">🔒</span> Asla Yapmadıklarımız</h2>
+      <ul>
+        <li>Kişisel verilerinizi toplamıyor veya sunucularımızda saklamıyoruz.</li>
+        <li>Üçüncü şahıslarla hiçbir bilgiyi satmıyor veya paylaşmıyoruz.</li>
+        <li>Ticari amaçlarla davranışınızı takip etmiyoruz.</li>
+        <li>Hesap kaydı veya e-posta istemiyoruz.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><span class="icon">🌐</span> Üçüncü Taraf Hizmetleri</h2>
+      <p>Uygulama, kendi gizlilik politikaları olan aşağıdaki hizmetleri kullanabilir:</p>
+      <ul>
+        <li><strong>Google Play Hizmetleri:</strong> Uygulamayı Android cihazlarda çalıştırmak için.</li>
+        <li><strong>Hava Durumu Hizmeti:</strong> Hava durumunu görüntülemek için.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><span class="icon">👶</span> Çocukların Gizliliği</h2>
+      <p>
+        Subul Al-Huda her yaş için uygundur. 13 yaşından küçük çocuklar dahil olmak üzere hiçbir kullanıcıdan
+        veri toplamıyoruz.
+      </p>
+    </section>
+
+    <section>
+      <h2><span class="icon">🔄</span> Bu Politikadaki Güncellemeler</h2>
+      <p>
+        Bu Gizlilik Politikasını zaman zaman güncelleyebiliriz. Önemli değişiklikler uygulama üzerinden size bildirilecektir.
+        Güncellemelerden sonra uygulamayı kullanmaya devam etmeniz, yeni politikayı kabul ettiğiniz anlamına gelir.
+      </p>
+    </section>
+
+  </div>
+  <!-- =================== END TURKISH =================== -->
+
   <div class="divider"></div>
 
   <!-- Contact -->
@@ -349,7 +496,7 @@
     <p style="color:#8b9ab0; font-size:14px; margin-top:8px;">
       لأي استفسار بخصوص الخصوصية — For any privacy inquiries
     </p>
-     <a class="contact-email" href="mailto:your@email.com">souboulalhouda@gmail.com</a>
+     <a class="contact-email" href="mailto:souboulalhouda@gmail.com">souboulalhouda@gmail.com</a>
   </div>
 
   <footer>
@@ -360,20 +507,30 @@
 </div>
 
 <script>
-  function showAr() {
-    document.getElementById('ar-content').style.display = 'block';
-    document.getElementById('en-content').style.display = 'none';
-    document.querySelectorAll('.lang-btn')[0].classList.add('active');
-    document.querySelectorAll('.lang-btn')[1].classList.remove('active');
-    return false;
-  }
-  function showEn() {
-    document.getElementById('ar-content').style.display = 'none';
-    document.getElementById('en-content').style.display = 'block';
-    document.querySelectorAll('.lang-btn')[0].classList.remove('active');
-    document.querySelectorAll('.lang-btn')[1].classList.add('active');
-    return false;
+  function switchLanguage(lang) {
+    // Hide all sections
+    document.querySelectorAll('.lang-section').forEach(function(el) {
+      el.classList.remove('active');
+    });
+    
+    // Show selected section
+    document.getElementById(lang + '-content').classList.add('active');
+    
+    // Update direction based on language
+    if(lang === 'ar') {
+      document.documentElement.setAttribute('dir', 'rtl');
+    } else {
+      document.documentElement.setAttribute('dir', 'ltr');
+    }
+    document.documentElement.setAttribute('lang', lang);
+    
+    // Update button states
+    document.querySelectorAll('.lang-btn').forEach(function(btn) {
+      btn.classList.remove('active');
+    });
+    event.currentTarget.classList.add('active');
   }
 </script>
 </body>
 </html>
+
