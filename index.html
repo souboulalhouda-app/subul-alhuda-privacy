@@ -1,536 +1,916 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>سياسة الخصوصية – سبل الهدى</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>سياسة الخصوصية | سبل الهدى — Subul Al-Huda Privacy Policy</title>
 
-    body {
-      font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
-      background: #0f1117;
-      color: #e8e0cc;
-      line-height: 1.9;
-      padding: 0 16px 60px;
-    }
+<meta name="description" content="سياسة الخصوصية الرسمية لتطبيق سبل الهدى. لا نجمع ولا نبيع بياناتك الشخصية أبداً. Official privacy policy for the Subul Al-Huda Islamic companion app." />
+<meta name="keywords" content="Subul Al-Huda, سبل الهدى, privacy policy, سياسة الخصوصية, Islamic app privacy, Quran app privacy" />
+<meta name="robots" content="index, follow" />
+<meta name="theme-color" content="#0a0d13" />
+<meta name="color-scheme" content="dark" />
 
-    /* Support for LTR languages */
-    [lang="en"], [lang="fr"], [lang="tr"] {
-      direction: ltr;
-      text-align: left;
-    }
-    
-    [lang="en"] ul li, [lang="fr"] ul li, [lang="tr"] ul li {
-      padding-left: 0;
-    }
+<!-- Canonical: replace with the domain this page is actually deployed on -->
+<link rel="canonical" href="https://subulalhouda.app/privacy" />
 
-    .container {
-      max-width: 780px;
-      margin: 0 auto;
-    }
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Privacy Policy — Subul Al-Huda" />
+<meta property="og:description" content="Subul Al-Huda does not collect or sell your personal data. Read our full privacy policy in Arabic, English, French and Turkish." />
+<meta property="og:url" content="https://subulalhouda.app/privacy" />
+<meta property="og:locale" content="ar_AR" />
+<meta property="og:site_name" content="Subul Al-Huda" />
 
-    header {
-      text-align: center;
-      padding: 60px 0 40px;
-      border-bottom: 1px solid #2a2f3d;
-      margin-bottom: 48px;
-    }
+<!-- Twitter -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Privacy Policy — Subul Al-Huda" />
+<meta name="twitter:description" content="Subul Al-Huda does not collect or sell your personal data. Read our full privacy policy in Arabic, English, French and Turkish." />
 
-    .logo-badge {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 72px; height: 72px;
-      border-radius: 20px;
-      background: linear-gradient(135deg, #1c2333, #252d40);
-      border: 1.5px solid #b8962a;
-      margin-bottom: 20px;
-      font-size: 32px;
-    }
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-    h1 {
-      font-size: 28px;
-      font-weight: 800;
-      background: linear-gradient(90deg, #f5e4a8, #e8c97a, #b8962a);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      margin-bottom: 8px;
-    }
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Subul Al-Huda",
+  "alternateName": "سبل الهدى",
+  "email": "souboulalhouda@gmail.com",
+  "url": "https://subulalhouda.app",
+  "applicationCategory": "Education, Religion & Spirituality",
+  "description": "Islamic companion application for prayer times, Qibla direction, Qur'an memorization and Islamic books.",
+  "publishingPrinciples": "https://subulalhouda.app/privacy"
+}
+</script>
 
-    .subtitle {
-      color: #6b7a96;
-      font-size: 14px;
-    }
+<style>
+  :root{
+    --bg:#0a0d13;
+    --bg-soft:#0d1119;
+    --surface:#12161f;
+    --surface-2:#171c27;
+    --border:rgba(212,175,55,0.16);
+    --border-strong:rgba(212,175,55,0.32);
+    --gold-1:#d4af37;
+    --gold-2:#f4e2ae;
+    --gold-3:#a3812a;
+    --emerald:#2a8f7c;
+    --emerald-soft:rgba(42,143,124,0.14);
+    --text-1:#ecebe6;
+    --text-2:#a7aebd;
+    --text-3:#5c6478;
+    --radius-lg:20px;
+    --radius-md:14px;
+    --radius-sm:8px;
+    --shadow-card:0 8px 30px -12px rgba(0,0,0,0.55);
+    --font-display-ar:'IBM Plex Sans Arabic', sans-serif;
+    --font-body-ar:'IBM Plex Sans Arabic', sans-serif;
+    --font-display-lt:'Fraunces', serif;
+    --font-body-lt:'Inter', sans-serif;
+    --maxw:1180px;
+  }
 
-    .last-updated {
-      display: inline-block;
-      margin-top: 12px;
-      padding: 4px 14px;
-      border-radius: 20px;
-      background: #1c2333;
-      border: 1px solid #2a2f3d;
-      font-size: 13px;
-      color: #8b9ab0;
-    }
+  *{ margin:0; padding:0; box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
 
-    section {
-      background: #161b22;
-      border: 1px solid #21283a;
-      border-radius: 16px;
-      padding: 28px 32px;
-      margin-bottom: 20px;
-      transition: border-color 0.2s;
-    }
+  body{
+    background:
+      radial-gradient(ellipse 900px 500px at 50% -10%, rgba(212,175,55,0.07), transparent 60%),
+      var(--bg);
+    color:var(--text-1);
+    line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
 
-    section:hover {
-      border-color: #b8962a44;
-    }
+  body[data-lang="ar"]{ font-family:var(--font-body-ar); }
+  body:not([data-lang="ar"]){ font-family:var(--font-body-lt); }
 
-    h2 {
-      font-size: 18px;
-      font-weight: 700;
-      color: #e8c97a;
-      margin-bottom: 16px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
+  [data-role="display"]{ font-weight:600; letter-spacing:-0.01em; }
+  body[data-lang="ar"] [data-role="display"]{ font-family:var(--font-display-ar); font-weight:700; letter-spacing:0; }
+  body:not([data-lang="ar"]) [data-role="display"]{ font-family:var(--font-display-lt); }
 
-    h2 .icon {
-      font-size: 20px;
-      filter: none;
-    }
+  a{ color:var(--gold-1); text-decoration:none; }
+  a:hover{ text-decoration:underline; }
 
-    p { color: #c8c0b0; font-size: 15px; margin-bottom: 10px; }
+  :focus-visible{
+    outline:2px solid var(--gold-1);
+    outline-offset:3px;
+    border-radius:4px;
+  }
 
-    ul {
-      list-style: none;
-      padding: 0;
-      margin-top: 8px;
-    }
+  .skip-link{
+    position:absolute; left:-999px; top:0;
+    background:var(--gold-1); color:#0a0d13; padding:10px 16px; border-radius:0 0 8px 8px; z-index:1000;
+  }
+  .skip-link:focus{ left:0; }
 
-    ul li {
-      color: #c8c0b0;
-      font-size: 15px;
-      padding: 6px 0;
-      border-bottom: 1px solid #1c2333;
-      display: flex;
-      align-items: flex-start;
-      gap: 10px;
-    }
+  /* ---------- progress bar ---------- */
+  #progressBar{
+    position:fixed; top:0; inset-inline-start:0; height:3px; width:0%;
+    background:linear-gradient(90deg, var(--emerald), var(--gold-1));
+    z-index:999; transition:width 0.08s linear;
+  }
 
-    ul li:last-child { border-bottom: none; }
+  /* ---------- header ---------- */
+  .site-header{
+    position:sticky; top:0; z-index:90;
+    background:rgba(10,13,19,0.72);
+    backdrop-filter:blur(14px) saturate(140%);
+    -webkit-backdrop-filter:blur(14px) saturate(140%);
+    border-bottom:1px solid var(--border);
+  }
+  .header-inner{
+    max-width:var(--maxw); margin:0 auto; padding:16px 24px;
+    display:flex; align-items:center; justify-content:space-between; gap:16px;
+  }
+  .brand{ display:flex; align-items:center; gap:12px; min-width:0; }
+  .brand-mark{
+    width:40px; height:40px; flex-shrink:0;
+    display:flex; align-items:center; justify-content:center;
+    border-radius:12px;
+    background:linear-gradient(145deg, #171c27, #10131a);
+    border:1px solid var(--border-strong);
+  }
+  .brand-mark svg{ width:22px; height:22px; }
+  .brand-text{ display:flex; flex-direction:column; min-width:0; }
+  .brand-text strong{ font-size:15px; color:var(--text-1); }
+  .brand-text small{ font-size:11.5px; color:var(--text-3); letter-spacing:0.03em; }
 
-    ul li::before {
-      content: "◆";
-      color: #e8c97a;
-      font-size: 8px;
-      margin-top: 7px;
-      flex-shrink: 0;
-    }
+  .lang-switch{ display:flex; gap:6px; flex-wrap:wrap; }
+  .lang-btn{
+    font: inherit; font-size:13px; font-weight:500;
+    padding:7px 14px; border-radius:999px;
+    background:transparent; border:1px solid var(--border);
+    color:var(--text-2); cursor:pointer; transition:all .18s ease;
+  }
+  .lang-btn:hover{ border-color:var(--border-strong); color:var(--text-1); }
+  .lang-btn.active{
+    background:var(--emerald-soft); border-color:var(--emerald);
+    color:var(--gold-2);
+  }
 
-    .highlight-box {
-      background: #1a2235;
-      border: 1px solid #e8c97a33;
-      border-radius: 10px;
-      padding: 16px 20px;
-      margin-top: 12px;
-    }
+  /* ---------- hero ---------- */
+  .hero{
+    position:relative; overflow:hidden;
+    padding:76px 24px 64px;
+    border-bottom:1px solid var(--border);
+    text-align:center;
+  }
+  .hero-star{
+    position:absolute; top:50%; inset-inline-start:50%;
+    transform:translate(-50%,-50%);
+    width:640px; height:640px; opacity:0.55;
+    pointer-events:none;
+  }
+  .hero-star svg{ width:100%; height:100%; }
+  .hero-star path{
+    fill:none; stroke:var(--gold-1); stroke-width:0.6;
+    stroke-dasharray:900; stroke-dashoffset:900;
+    animation:drawStar 2.6s ease-out forwards;
+    opacity:0.6;
+  }
+  @keyframes drawStar{ to{ stroke-dashoffset:0; } }
 
-    .highlight-box p {
-      color: #e8d8a0;
-      margin: 0;
-      font-size: 14px;
-    }
+  .hero-inner{ position:relative; max-width:680px; margin:0 auto; }
+  .eyebrow{
+    display:inline-block; font-size:12.5px; font-weight:600;
+    letter-spacing:0.12em; text-transform:uppercase;
+    color:var(--gold-2); background:rgba(212,175,55,0.09);
+    border:1px solid var(--border-strong); border-radius:999px;
+    padding:6px 16px; margin-bottom:20px;
+  }
+  .hero h1{
+    font-size:clamp(30px,5vw,46px); line-height:1.15;
+    background:linear-gradient(120deg, var(--text-1) 30%, var(--gold-2) 75%, var(--gold-1));
+    -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
+    margin-bottom:16px;
+  }
+  .hero p{ color:var(--text-2); font-size:16px; max-width:560px; margin:0 auto 26px; }
+  .hero-badges{ display:flex; gap:10px; justify-content:center; flex-wrap:wrap; }
+  .hero-badges span{
+    font-size:12.5px; color:var(--text-2);
+    background:var(--surface); border:1px solid var(--border);
+    padding:7px 14px; border-radius:999px;
+  }
+  .hero-badges span strong{ color:var(--gold-2); font-weight:600; }
 
-    .contact-box {
-      text-align: center;
-      padding: 32px;
-      background: linear-gradient(135deg, #161b22, #1c2333);
-      border: 1px solid #e8c97a44;
-      border-radius: 16px;
-      margin-top: 32px;
-    }
+  /* ---------- layout ---------- */
+  .layout{
+    max-width:var(--maxw); margin:0 auto; padding:56px 24px 40px;
+    display:grid; grid-template-columns:240px 1fr; gap:48px; align-items:start;
+  }
+  .toc{ position:sticky; top:92px; }
+  .toc-label{
+    font-size:11.5px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase;
+    color:var(--text-3); margin-bottom:14px; padding-inline-start:2px;
+  }
+  .toc ul{ list-style:none; display:flex; flex-direction:column; gap:2px; border-inline-start:1px solid var(--border); }
+  .toc li a{
+    display:block; padding:8px 16px; font-size:13.5px; color:var(--text-2);
+    border-inline-start:2px solid transparent; margin-inline-start:-1px;
+    transition:all .15s ease;
+  }
+  .toc li a:hover{ color:var(--text-1); }
+  .toc li a.active{
+    color:var(--gold-2); border-inline-start-color:var(--gold-1);
+    background:linear-gradient(90deg, rgba(212,175,55,0.08), transparent);
+  }
 
-    .contact-box h2 { justify-content: center; }
+  main{ min-width:0; display:flex; flex-direction:column; gap:20px; }
 
-    .contact-email {
-      display: inline-block;
-      margin-top: 12px;
-      padding: 10px 24px;
-      background: #e8c97a;
-      color: #0f1117;
-      border-radius: 8px;
-      font-weight: 700;
-      font-size: 15px;
-      text-decoration: none;
-      direction: ltr;
-    }
+  .policy-section{
+    background:linear-gradient(160deg, var(--surface), var(--surface-2));
+    border:1px solid var(--border);
+    border-radius:var(--radius-lg);
+    padding:32px 34px;
+    box-shadow:var(--shadow-card);
+    scroll-margin-top:100px;
+    transition:border-color .2s ease;
+  }
+  .policy-section:hover{ border-color:var(--border-strong); }
+  .section-num{
+    display:inline-block; font-size:12.5px; font-weight:700; color:var(--gold-1);
+    font-variant-numeric:tabular-nums; letter-spacing:0.06em; margin-bottom:10px;
+  }
+  .policy-section h2{
+    font-size:20px; color:var(--text-1); margin-bottom:16px; line-height:1.4;
+  }
+  .policy-section p{ color:var(--text-2); font-size:15px; margin-bottom:12px; }
+  .policy-section p:last-child{ margin-bottom:0; }
 
-    .lang-switch {
-      text-align: center;
-      margin-bottom: 32px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 8px;
-    }
+  .p-list{ list-style:none; margin-top:6px; display:flex; flex-direction:column; gap:9px; }
+  .p-list li{
+    display:flex; gap:10px; align-items:flex-start; color:var(--text-2); font-size:14.5px;
+  }
+  .p-list li::before{
+    content:""; flex-shrink:0; width:6px; height:6px; margin-top:8px;
+    background:var(--gold-1); border-radius:1px; transform:rotate(45deg);
+  }
 
-    .lang-btn {
-      display: inline-block;
-      padding: 8px 20px;
-      border-radius: 8px;
-      background: #1c2333;
-      border: 1px solid #2a2f3d;
-      color: #8b9ab0;
-      cursor: pointer;
-      font-size: 14px;
-      text-decoration: none;
-      transition: all 0.2s ease;
-    }
+  .highlight-box{
+    background:var(--emerald-soft); border:1px solid rgba(42,143,124,0.4);
+    border-radius:var(--radius-md); padding:16px 18px; margin-top:14px;
+    display:flex; gap:12px; align-items:flex-start;
+  }
+  .highlight-box svg{ flex-shrink:0; width:20px; height:20px; margin-top:2px; color:var(--emerald); }
+  .highlight-box p{ margin:0; color:#cfe9e2; font-size:14.5px; }
 
-    .lang-btn:hover {
-      background: #252d40;
-    }
+  /* permissions */
+  .perm-grid{ display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:6px; }
+  .perm-card{
+    background:var(--bg-soft); border:1px solid var(--border);
+    border-radius:var(--radius-md); padding:18px;
+  }
+  .perm-head{ display:flex; align-items:center; gap:10px; margin-bottom:8px; }
+  .perm-icon{
+    width:34px; height:34px; border-radius:10px; flex-shrink:0;
+    background:rgba(212,175,55,0.1); border:1px solid var(--border-strong);
+    display:flex; align-items:center; justify-content:center;
+  }
+  .perm-icon svg{ width:17px; height:17px; color:var(--gold-1); }
+  .perm-head strong{ font-size:14.5px; color:var(--text-1); }
+  .perm-card p{ font-size:13.8px; color:var(--text-2); margin-bottom:8px; }
+  .perm-tag{
+    display:inline-block; font-size:11px; font-weight:600; letter-spacing:0.04em;
+    color:var(--gold-2); background:rgba(212,175,55,0.08); border:1px solid var(--border);
+    border-radius:999px; padding:3px 10px;
+  }
 
-    .lang-btn.active {
-      background: #e8c97a22;
-      border-color: #e8c97a;
-      color: #e8c97a;
-    }
+  /* third party services */
+  .service-card{
+    background:var(--bg-soft); border:1px solid var(--border); border-radius:var(--radius-md);
+    padding:18px; display:flex; flex-direction:column; gap:6px; margin-top:6px;
+  }
+  .service-card strong{ font-size:15px; color:var(--text-1); }
+  .service-card p{ font-size:14px; color:var(--text-2); margin:0; }
+  .service-links{ display:flex; gap:14px; margin-top:6px; flex-wrap:wrap; }
+  .service-links a{ font-size:13.5px; }
 
-    .lang-section { display: none; }
-    .lang-section.active { display: block; }
+  /* contact */
+  .contact-card{
+    text-align:center; padding:44px 32px;
+    background:radial-gradient(ellipse at 50% 0%, rgba(212,175,55,0.1), transparent 60%), linear-gradient(160deg, var(--surface), var(--surface-2));
+    border:1px solid var(--border-strong); border-radius:var(--radius-lg);
+  }
+  .contact-card h2{ font-size:22px; margin-bottom:8px; }
+  .contact-card p{ color:var(--text-2); font-size:15px; margin-bottom:22px; }
+  .contact-btn{
+    display:inline-flex; align-items:center; gap:8px;
+    background:linear-gradient(120deg, var(--gold-2), var(--gold-1));
+    color:#0a0d13; font-weight:700; font-size:14.5px;
+    padding:12px 26px; border-radius:999px; direction:ltr;
+  }
+  .contact-btn:hover{ text-decoration:none; filter:brightness(1.06); }
 
-    footer {
-      text-align: center;
-      padding-top: 40px;
-      color: #3a4255;
-      font-size: 13px;
-    }
+  /* footer */
+  .site-footer{
+    border-top:1px solid var(--border); padding:36px 24px; text-align:center;
+    color:var(--text-3); font-size:13px;
+  }
+  .site-footer p{ margin-bottom:4px; }
 
-    .divider {
-      height: 1px;
-      background: linear-gradient(90deg, transparent, #e8c97a44, transparent);
-      margin: 40px 0;
-    }
-  </style>
+  /* back to top */
+  #backToTop{
+    position:fixed; bottom:26px; inset-inline-end:26px; z-index:80;
+    width:46px; height:46px; border-radius:50%;
+    background:var(--surface); border:1px solid var(--border-strong);
+    color:var(--gold-1); font-size:18px; cursor:pointer;
+    display:flex; align-items:center; justify-content:center;
+    box-shadow:var(--shadow-card);
+    opacity:0; transform:translateY(12px); pointer-events:none;
+    transition:all .25s ease;
+  }
+  #backToTop.visible{ opacity:1; transform:translateY(0); pointer-events:auto; }
+  #backToTop:hover{ border-color:var(--gold-1); }
+
+  @media (max-width: 880px){
+    .layout{ grid-template-columns:1fr; }
+    .toc{ position:static; order:2; margin-top:8px; }
+    .toc ul{ display:flex; flex-wrap:wrap; border-inline-start:none; gap:6px; }
+    .toc li a{ border:1px solid var(--border); border-radius:999px; padding:6px 12px; }
+    .toc li a.active{ border-color:var(--gold-1); background:rgba(212,175,55,0.08); }
+    main{ order:1; }
+    .perm-grid{ grid-template-columns:1fr; }
+    .policy-section{ padding:24px 20px; }
+    .hero{ padding:56px 18px 48px; }
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior:auto; }
+    .hero-star path{ animation:none; stroke-dashoffset:0; }
+    *{ transition:none !important; }
+  }
+</style>
 </head>
-<body>
-<div class="container">
+<body data-lang="ar">
+<a href="#mainContent" class="skip-link">Skip to content</a>
+<div id="progressBar" role="progressbar" aria-hidden="true"></div>
 
-  <header>
-    <div class="logo-badge">🕌</div>
-    <h1>سبل الهدى</h1>
-    <p class="subtitle">Subul Al-Huda — Islamic Companion App</p>
-    <span class="last-updated">آخر تحديث: مارس 2026</span>
-  </header>
-
-  <!-- Language Switch -->
-  <div class="lang-switch">
-    <a class="lang-btn active" onclick="switchLanguage('ar')" href="javascript:void(0);">🇸🇦 العربية</a>
-    <a class="lang-btn" onclick="switchLanguage('en')" href="javascript:void(0);">🇬🇧 English</a>
-    <a class="lang-btn" onclick="switchLanguage('fr')" href="javascript:void(0);">🇫🇷 Français</a>
-    <a class="lang-btn" onclick="switchLanguage('tr')" href="javascript:void(0);">🇹🇷 Türkçe</a>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" style="color:var(--gold-1)">
+          <path d="M12 2l2.2 6.2L21 10l-6.2 2.2L12 18l-2.2-5.8L4 10l6.8-1.8L12 2z" stroke-width="1.2" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      <span class="brand-text">
+        <strong id="brandTitle" data-role="display"></strong>
+        <small id="brandTag"></small>
+      </span>
+    </div>
+    <nav class="lang-switch" aria-label="Language selector">
+      <button class="lang-btn active" data-lang="ar" aria-pressed="true">العربية</button>
+      <button class="lang-btn" data-lang="en" aria-pressed="false">English</button>
+      <button class="lang-btn" data-lang="fr" aria-pressed="false">Français</button>
+      <button class="lang-btn" data-lang="tr" aria-pressed="false">Türkçe</button>
+    </nav>
   </div>
+</header>
 
-  <!-- =================== ARABIC =================== -->
-  <div id="ar-content" class="lang-section active" lang="ar">
-
-    <section>
-      <h2><span class="icon">📋</span> مقدمة</h2>
-      <p>
-        نرحب بك في تطبيق <strong>سبل الهدى</strong>. نحن نحترم خصوصيتك ونلتزم بحماية بياناتك الشخصية.
-        توضح هذه السياسة كيفية تعاملنا مع المعلومات عند استخدامك لتطبيقنا.
-      </p>
-      <div class="highlight-box">
-        <p>✅ تطبيق سبل الهدى <strong>لا يجمع ولا يخزن أي بيانات شخصية</strong> على خوادمنا.</p>
-      </div>
-    </section>
-
-    <section>
-      <h2><span class="icon">📦</span> البيانات التي نستخدمها</h2>
-      <p>التطبيق يستخدم الأذونات التالية فقط لتشغيل ميزاته:</p>
-      <ul>
-        <li><strong>الموقع الجغرافي:</strong> لتحديد أوقات الصلاة الدقيقة واتجاه القبلة. لا يُرسل موقعك لأي خادم.</li>
-        <li><strong>الميكروفون:</strong> لميزة الحفظ بالصوت فقط. الصوت يُعالَج محلياً على جهازك ولا يُخزَّن.</li>
-        <li><strong>الإشعارات:</strong> لإرسال تنبيهات أوقات الصلاة والأذان.</li>
-        <li><strong>الإنترنت:</strong> لتحميل وعرض الكتب.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2><span class="icon">🔒</span> ما لا نفعله أبداً</h2>
-      <ul>
-        <li>لا نجمع بياناتك الشخصية أو نخزنها على خوادمنا.</li>
-        <li>لا نبيع أو نشارك أي معلومات مع أطراف ثالثة.</li>
-        <li>لا نتتبع سلوكك داخل التطبيق لأغراض تجارية.</li>
-        <li>لا نطلب تسجيل حساب أو بريد إلكتروني.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2><span class="icon">🌐</span> خدمات الطرف الثالث</h2>
-      <p>قد يستخدم التطبيق الخدمات التالية التي لها سياسات خصوصية خاصة بها:</p>
-      <ul>
-        <li><strong>Google Play Services:</strong> لتشغيل التطبيق على أجهزة Android.</li>
-        <li><strong>خدمة الطقس:</strong> لعرض الطقس.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2><span class="icon">👶</span> خصوصية الأطفال</h2>
-      <p>
-        تطبيق سبل الهدى مناسب لجميع الأعمار. نحن لا نجمع أي بيانات من أي مستخدم
-        بمن فيهم الأطفال دون سن 13 عاماً.
-      </p>
-    </section>
-
-    <section>
-      <h2><span class="icon">🔄</span> التحديثات على هذه السياسة</h2>
-      <p>
-        قد نقوم بتحديث سياسة الخصوصية من وقت لآخر. سيتم إشعارك بأي تغييرات جوهرية
-        عبر التطبيق. استمرارك في استخدام التطبيق بعد التحديث يعني موافقتك على السياسة الجديدة.
-      </p>
-    </section>
-
+<section class="hero">
+  <div class="hero-star" aria-hidden="true">
+    <svg viewBox="0 0 200 200">
+      <path d="M100 10 L124 76 L190 60 L142 108 L176 170 L100 138 L24 170 L58 108 L10 60 L76 76 Z"/>
+    </svg>
   </div>
-  <!-- =================== END ARABIC =================== -->
-
-  <!-- =================== ENGLISH =================== -->
-  <div id="en-content" class="lang-section" lang="en">
-
-    <section>
-      <h2><span class="icon">📋</span> Introduction</h2>
-      <p>
-        Welcome to <strong>Subul Al-Huda</strong>. We respect your privacy and are committed to protecting your personal data.
-        This policy explains how we handle information when you use our app.
-      </p>
-      <div class="highlight-box">
-        <p>✅ Subul Al-Huda <strong>does not collect or store any personal data</strong> on our servers.</p>
-      </div>
-    </section>
-
-    <section>
-      <h2><span class="icon">📦</span> Data We Access</h2>
-      <p>The app uses the following permissions only to operate its features:</p>
-      <ul>
-        <li><strong>Location:</strong> To calculate accurate prayer times and Qibla direction. Your location is never sent to any server.</li>
-        <li><strong>Microphone:</strong> For the voice memorization feature only. Audio is processed locally on your device and never stored.</li>
-        <li><strong>Notifications:</strong> To send prayer time and Adhan reminders.</li>
-        <li><strong>Internet:</strong> To download and view books.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2><span class="icon">🔒</span> What We Never Do</h2>
-      <ul>
-        <li>We do not collect or store your personal data on our servers.</li>
-        <li>We do not sell or share any information with third parties.</li>
-        <li>We do not track your behavior for commercial purposes.</li>
-        <li>We do not require account registration or email.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2><span class="icon">🌐</span> Third-Party Services</h2>
-      <p>The app may use the following services which have their own privacy policies:</p>
-      <ul>
-        <li><strong>Google Play Services:</strong> To run the app on Android devices.</li>
-        <li><strong>Weather Service:</strong> To view the weather.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2><span class="icon">👶</span> Children's Privacy</h2>
-      <p>
-        Subul Al-Huda is suitable for all ages. We do not collect any data from any user,
-        including children under 13 years of age.
-      </p>
-    </section>
-
-    <section>
-      <h2><span class="icon">🔄</span> Updates to This Policy</h2>
-      <p>
-        We may update this Privacy Policy from time to time. You will be notified of any significant changes
-        through the app. Continued use of the app after updates means you accept the new policy.
-      </p>
-    </section>
-
+  <div class="hero-inner">
+    <span class="eyebrow" id="heroEyebrow"></span>
+    <h1 id="heroTitle" data-role="display"></h1>
+    <p id="heroSubtitle"></p>
+    <div class="hero-badges">
+      <span id="badgeEffective"></span>
+      <span id="badgeUpdated"></span>
+    </div>
   </div>
-  <!-- =================== END ENGLISH =================== -->
+</section>
 
-  <!-- =================== FRENCH =================== -->
-  <div id="fr-content" class="lang-section" lang="fr">
-
-    <section>
-      <h2><span class="icon">📋</span> Introduction</h2>
-      <p>
-        Bienvenue dans <strong>Subul Al-Huda</strong>. Nous respectons votre vie privée et nous nous engageons à protéger vos données personnelles.
-        Cette politique explique comment nous traitons les informations lorsque vous utilisez notre application.
-      </p>
-      <div class="highlight-box">
-        <p>✅ L'application Subul Al-Huda <strong>ne collecte ni ne stocke aucune donnée personnelle</strong> sur nos serveurs.</p>
-      </div>
-    </section>
-
-    <section>
-      <h2><span class="icon">📦</span> Données auxquelles nous accédons</h2>
-      <p>L'application utilise les autorisations suivantes uniquement pour faire fonctionner ses fonctionnalités :</p>
-      <ul>
-        <li><strong>Localisation :</strong> Pour calculer les heures de prière exactes et la direction de la Qibla. Votre position n'est jamais envoyée à aucun serveur.</li>
-        <li><strong>Microphone :</strong> Uniquement pour la fonctionnalité de mémorisation vocale. L'audio est traité localement sur votre appareil et n'est jamais stocké.</li>
-        <li><strong>Notifications :</strong> Pour envoyer des rappels d'heures de prière et d'Adhan.</li>
-        <li><strong>Internet :</strong> Pour télécharger et afficher des livres.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2><span class="icon">🔒</span> Ce que nous ne faisons jamais</h2>
-      <ul>
-        <li>Nous ne collectons ni ne stockons vos données personnelles sur nos serveurs.</li>
-        <li>Nous ne vendons ni ne partageons aucune information avec des tiers.</li>
-        <li>Nous ne suivons pas votre comportement à des fins commerciales.</li>
-        <li>Nous ne demandons pas d'enregistrement de compte ni d'adresse e-mail.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2><span class="icon">🌐</span> Services Tiers</h2>
-      <p>L'application peut utiliser les services suivants qui ont leurs propres politiques de confidentialité :</p>
-      <ul>
-        <li><strong>Google Play Services :</strong> Pour exécuter l'application sur les appareils Android.</li>
-        <li><strong>Service Météo :</strong> Pour afficher la météo.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2><span class="icon">👶</span> Confidentialité des enfants</h2>
-      <p>
-        Subul Al-Huda convient à tous les âges. Nous ne collectons aucune donnée d'aucun utilisateur,
-        y compris les enfants de moins de 13 ans.
-      </p>
-    </section>
-
-    <section>
-      <h2><span class="icon">🔄</span> Mises à jour de cette politique</h2>
-      <p>
-        Nous pouvons mettre à jour cette politique de confidentialité de temps à autre. Vous serez informé de tout changement important
-        via l'application. Votre utilisation continue de l'application après les modifications signifie que vous acceptez la nouvelle politique.
-      </p>
-    </section>
-
-  </div>
-  <!-- =================== END FRENCH =================== -->
-
-  <!-- =================== TURKISH =================== -->
-  <div id="tr-content" class="lang-section" lang="tr">
-
-    <section>
-      <h2><span class="icon">📋</span> Giriş</h2>
-      <p>
-        <strong>Subul Al-Huda</strong>'ya hoş geldiniz. Gizliliğinize saygı duyuyoruz ve kişisel verilerinizi korumayı taahhüt ediyoruz.
-        Bu politika, uygulamamızı kullandığınızda bilgileri nasıl işlediğimizi açıklar.
-      </p>
-      <div class="highlight-box">
-        <p>✅ Subul Al-Huda uygulaması <strong>hiçbir kişisel veriyi toplamaz veya sunucularımızda saklamaz</strong>.</p>
-      </div>
-    </section>
-
-    <section>
-      <h2><span class="icon">📦</span> Eriştiğimiz Veriler</h2>
-      <p>Uygulama, özellikleri çalıştırmak için yalnızca aşağıdaki izinleri kullanır:</p>
-      <ul>
-        <li><strong>Konum:</strong> Doğru namaz vakitlerini ve Kıble yönünü hesaplamak için. Konumunuz hiçbir sunucuya gönderilmez.</li>
-        <li><strong>Mikrofon:</strong> Sadece sesli ezberleme özelliği içindir. Ses cihazınızda yerel olarak işlenir ve asla saklanmaz.</li>
-        <li><strong>Bildirimler:</strong> Namaz vakti ve Ezan hatırlatıcıları göndermek için.</li>
-        <li><strong>İnternet:</strong> Kitapları indirmek ve görüntülemek için.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2><span class="icon">🔒</span> Asla Yapmadıklarımız</h2>
-      <ul>
-        <li>Kişisel verilerinizi toplamıyor veya sunucularımızda saklamıyoruz.</li>
-        <li>Üçüncü şahıslarla hiçbir bilgiyi satmıyor veya paylaşmıyoruz.</li>
-        <li>Ticari amaçlarla davranışınızı takip etmiyoruz.</li>
-        <li>Hesap kaydı veya e-posta istemiyoruz.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2><span class="icon">🌐</span> Üçüncü Taraf Hizmetleri</h2>
-      <p>Uygulama, kendi gizlilik politikaları olan aşağıdaki hizmetleri kullanabilir:</p>
-      <ul>
-        <li><strong>Google Play Hizmetleri:</strong> Uygulamayı Android cihazlarda çalıştırmak için.</li>
-        <li><strong>Hava Durumu Hizmeti:</strong> Hava durumunu görüntülemek için.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2><span class="icon">👶</span> Çocukların Gizliliği</h2>
-      <p>
-        Subul Al-Huda her yaş için uygundur. 13 yaşından küçük çocuklar dahil olmak üzere hiçbir kullanıcıdan
-        veri toplamıyoruz.
-      </p>
-    </section>
-
-    <section>
-      <h2><span class="icon">🔄</span> Bu Politikadaki Güncellemeler</h2>
-      <p>
-        Bu Gizlilik Politikasını zaman zaman güncelleyebiliriz. Önemli değişiklikler uygulama üzerinden size bildirilecektir.
-        Güncellemelerden sonra uygulamayı kullanmaya devam etmeniz, yeni politikayı kabul ettiğiniz anlamına gelir.
-      </p>
-    </section>
-
-  </div>
-  <!-- =================== END TURKISH =================== -->
-
-  <div class="divider"></div>
-
-  <!-- Contact -->
-  <div class="contact-box">
-    <h2><span class="icon">✉️</span> تواصل معنا / Contact Us</h2>
-    <p style="color:#8b9ab0; font-size:14px; margin-top:8px;">
-      لأي استفسار بخصوص الخصوصية — For any privacy inquiries
-    </p>
-     <a class="contact-email" href="mailto:souboulalhouda@gmail.com">souboulalhouda@gmail.com</a>
-  </div>
-
-  <footer>
-    <p>© 2026 سبل الهدى – Subul Al-Huda. All rights reserved.</p>
-    <p style="margin-top:6px;">جميع الحقوق محفوظة</p>
-  </footer>
-
+<div class="layout">
+  <aside class="toc" aria-label="Table of contents">
+    <p class="toc-label" id="tocLabel"></p>
+    <ul id="tocList"></ul>
+  </aside>
+  <main id="mainContent"></main>
 </div>
 
+<button id="backToTop" aria-label="Back to top">↑</button>
+
+<footer class="site-footer">
+  <p id="footerRights"></p>
+  <p id="footerTagline"></p>
+</footer>
+
 <script>
-  function switchLanguage(lang) {
-    // Hide all sections
-    document.querySelectorAll('.lang-section').forEach(function(el) {
-      el.classList.remove('active');
-    });
-    
-    // Show selected section
-    document.getElementById(lang + '-content').classList.add('active');
-    
-    // Update direction based on language
-    if(lang === 'ar') {
-      document.documentElement.setAttribute('dir', 'rtl');
-    } else {
-      document.documentElement.setAttribute('dir', 'ltr');
-    }
-    document.documentElement.setAttribute('lang', lang);
-    
-    // Update button states
-    document.querySelectorAll('.lang-btn').forEach(function(btn) {
-      btn.classList.remove('active');
-    });
-    event.currentTarget.classList.add('active');
+(function(){
+  "use strict";
+
+  var icons = {
+    location: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s7-6.1 7-11.6A7 7 0 0 0 5 9.4C5 14.9 12 21 12 21z"/><circle cx="12" cy="9.4" r="2.4"/></svg>',
+    bell: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 16v-5a6 6 0 1 1 12 0v5l1.5 2.5h-15z"/><path d="M10 19a2 2 0 0 0 4 0"/></svg>',
+    mic: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0"/><path d="M12 18v3"/></svg>',
+    wifi: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 9.5a12 12 0 0 1 16 0"/><path d="M7 13a8 8 0 0 1 10 0"/><path d="M10 16.5a4 4 0 0 1 4 0"/><circle cx="12" cy="19.5" r="0.9" fill="currentColor" stroke="none"/></svg>',
+    check: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 7L10 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+  };
+
+  function perm(icon,name,desc,tag){ return {icon:icon,name:name,desc:desc,tag:tag}; }
+  function svc(name,purpose,website,policy){ return {name:name,purpose:purpose,website:website,policy:policy}; }
+  function sec(id,num,title,blocks){ return {id:id,num:num,title:title,blocks:blocks}; }
+  function p(text){ return {type:'p', text:text}; }
+  function ul(items){ return {type:'list', items:items}; }
+  function permGrid(items){ return {type:'permissions', items:items}; }
+  function svcList(items){ return {type:'services', items:items}; }
+  function box(text){ return {type:'box', text:text}; }
+
+  var T = {};
+
+  /* ================= ARABIC ================= */
+  T.ar = {
+    dir:'rtl', htmlLang:'ar',
+    brandTitle:'سبل الهدى', brandTag:'سياسة الخصوصية',
+    heroEyebrow:'وثيقة قانونية', heroTitle:'سياسة الخصوصية',
+    heroSubtitle:'نلتزم بخصوصيتك التزاماً كاملاً. توضح هذه الصفحة بشكل شفاف ومفصّل كل ما يتعلق ببياناتك عند استخدام تطبيق سبل الهدى.',
+    badgeEffective:'تاريخ النفاذ: 1 أغسطس 2026', badgeUpdated:'آخر تحديث: أغسطس 2026',
+    tocLabel:'محتويات الصفحة',
+    footerRights:'© 2026 سبل الهدى (Subul Al-Huda). جميع الحقوق محفوظة.',
+    footerTagline:'صُمم بعناية لخدمة القرآن والعبادة اليومية.',
+    contactBtn:'راسلنا عبر البريد الإلكتروني',
+    sections:[
+      sec('introduction','01','مقدمة',[
+        p('نرحب بك في تطبيق "سبل الهدى" ("التطبيق"، "نحن"). صممنا هذا التطبيق ليكون رفيقك في العبادة اليومية وحفظ القرآن الكريم، ونحن نأخذ خصوصية كل من يستخدمه على محمل الجد. توضح سياسة الخصوصية هذه، بلغة واضحة، ما هي المعلومات التي يصل إليها التطبيق، وكيف تُستخدم، والخيارات المتاحة لك.'),
+        p('باستخدامك أو تثبيتك لتطبيق سبل الهدى، فإنك توافق على الممارسات المذكورة في هذه الوثيقة. إن لم توافق عليها، يُرجى عدم استخدام التطبيق.')
+      ]),
+      sec('effective-date','02','تاريخ النفاذ',[
+        p('يصبح تاريخ نفاذ سياسة الخصوصية هذه ساري المفعول ابتداءً من 1 أغسطس 2026، وقد تمت مراجعتها آخر مرة في التاريخ المذكور أعلى هذه الصفحة.'),
+        ul(['تاريخ النفاذ: 1 أغسطس 2026','آخر تحديث: أغسطس 2026','الإصدار: 2.0'])
+      ]),
+      sec('developer-info','03','معلومات المطوّر',[
+        p('يتم تطوير وصيانة تطبيق سبل الهدى من قِبل مطوّر مستقل مكرَّس لتقديم أدوات تعليمية إسلامية موثوقة.'),
+        ul(['اسم التطبيق: سبل الهدى (Subul Al-Huda)','التواصل مع المطوّر: souboulalhouda@gmail.com','التصنيف: تعليم / دين وروحانيات'])
+      ]),
+      sec('scope','04','نطاق هذه السياسة',[
+        p('تنطبق هذه السياسة على تطبيق سبل الهدى للهواتف المحمولة على جميع الأنظمة التي يُوزَّع عليها، بما في ذلك أندرويد عبر Google Play. لا تنطبق هذه السياسة على أي مواقع أو خدمات أو تطبيقات تابعة لجهات خارجية قد تكون مرتبطة داخل التطبيق.')
+      ]),
+      sec('data-we-collect','05','البيانات التي نتعامل معها',[
+        p('يقوم تطبيق سبل الهدى على مبدأ بسيط: ما يحدث على جهازك يبقى على جهازك. لا نملك خوادم تستقبل أو تسجّل أو تخزّن بياناتك الشخصية.'),
+        ul(['لا نطلب منك إنشاء حساب.','لا نطلب اسمك أو بريدك الإلكتروني أو رقم هاتفك.','لا نجمع بيانات تحليلية أو معرّفات إعلانية.','لا نصل إلى جهات اتصالك أو صورك أو ملفاتك إلا فيما تتطلبه ميزة معينة صريحة.'])
+      ]),
+      sec('data-not-collected','06','بيانات لا نجمعها إطلاقاً',[
+        p('لإزالة أي شك، لا يقوم تطبيق سبل الهدى بجمع أو نقل أو تخزين أي من البيانات التالية:'),
+        ul(['المعرّفات الشخصية (الاسم، البريد الإلكتروني، رقم الهاتف)','سجل الموقع الجغرافي الدقيق أو التقريبي','التسجيلات الصوتية الخاصة بميزة الحفظ','معرّفات التتبع أو الإعلانات','معلومات الدفع أو البيانات المالية'])
+      ]),
+      sec('permissions','07','الأذونات المستخدَمة',[
+        p('يطلب التطبيق الأذونات التالية فقط لتفعيل ميزاته، ويتم طلب كل إذن عند أول استخدام فعلي للميزة المرتبطة به:'),
+        permGrid([
+          perm('location','الموقع الجغرافي','لحساب مواقيت الصلاة الدقيقة واتجاه القبلة حسب موقعك. لا يُرسل موقعك إلى أي خادم مطلقاً.','اختياري'),
+          perm('bell','الإشعارات','لإرسال تنبيهات مواقيت الصلاة والأذان في وقتها الصحيح.','اختياري'),
+          perm('mic','الميكروفون','لتفعيل ميزة الحفظ الصوتي، حيث تتم مطابقة تلاوتك محلياً على جهازك فقط. الصوت لا يُرفع أو يُخزَّن أبداً.','اختياري'),
+          perm('wifi','الإنترنت','لتحميل الكتب ونصوص وتلاوات القرآن، وبث الراديو المباشر.','مطلوب لبعض الميزات')
+        ]),
+        box('يمكنك تغيير أي من هذه الأذونات في أي وقت من إعدادات جهازك، ورفض أي إذن لن يمنعك من استخدام باقي ميزات التطبيق.')
+      ]),
+      sec('local-storage','08','التخزين المحلي للبيانات',[
+        p('أي معلومات يحتاج التطبيق لتذكّرها عنك — مثل القارئ المفضل، الإشارات المرجعية، تقدّم القراءة، إعدادات العرض، وسجل الحفظ — تُخزَّن محلياً على جهازك فقط باستخدام وسائل التخزين المعتادة على الجهاز. لا تُنقل هذه المعلومات إلينا أو لأي طرف ثالث أبداً، وتُحذف تلقائياً عند مسح بيانات التطبيق أو إزالة تثبيته.')
+      ]),
+      sec('third-party','09','خدمات الطرف الثالث',[
+        p('قد يستخدم التطبيق الخدمات التالية التي تخضع لسياسات خصوصية مستقلة خاصة بها:'),
+        svcList([
+          svc('خدمات Google Play','مطلوبة من نظام أندرويد لتثبيت التطبيق وتحديثه وتشغيل وظائفه الأساسية.','https://www.google.com','https://policies.google.com/privacy')
+        ])
+      ]),
+      sec('children','10','خصوصية الأطفال',[
+        p('صُمم تطبيق سبل الهدى ليكون مناسباً لجميع الأعمار، بما فيهم الأطفال. وبما أن التطبيق لا يجمع بيانات شخصية من أي مستخدم، فإننا لا نجمع عن قصد أي بيانات شخصية من الأطفال دون سن 13 عاماً (أو السن القانونية للموافقة الرقمية في بلدك). إذا كنت تعتقد أن طفلاً قد قدّم لنا معلومات شخصية عبر قناة دعم مثل البريد الإلكتروني، يُرجى التواصل معنا وسنقوم بحذفها فوراً.')
+      ]),
+      sec('security','11','الأمان',[
+        p('نتبع مبدأ "بيانات أقل، مخاطر أقل" في كل ما يخص الأمان.'),
+        ul(['لا توجد حسابات مستخدمين أو كلمات مرور يمكن اختراقها.','لا توجد قاعدة بيانات سحابية تخزّن معلوماتك الشخصية.','لا يتم بناء أو مشاركة أي ملف تعريف إعلاني.','لا نبيع بياناتك الشخصية لأي طرف تحت أي ظرف.','نلتزم بإرشادات الأمان الصادرة عن Google Play والأنظمة التي نوزّع عليها التطبيق.']),
+        p('نظراً لأن كمية البيانات التي تخرج من جهازك ضئيلة جداً، فإن سطح الهجوم المحتمل لتسريب بياناتك الشخصية محدود بطبيعة تصميم التطبيق.')
+      ]),
+      sec('rights','12','حقوقك',[
+        ul(['منح أو رفض أي إذن في أي وقت من إعدادات جهازك.','إلغاء إذن سبق منحه دون أن تفقد إمكانية استخدام باقي التطبيق.','حذف بيانات التطبيق المخزَّنة محلياً في أي وقت من إعدادات جهازك.','مسح التخزين أو إزالة تثبيت التطبيق لحذف جميع البيانات المحلية فوراً.','التواصل مع المطوّر لأي استفسار أو طلب متعلق بالخصوصية.'])
+      ]),
+      sec('external-links','13','روابط خارجية',[
+        p('قد يحتوي التطبيق على روابط لمواقع خارجية أو بث راديو مباشر أو مصادر تعليمية إسلامية تابعة لجهات أخرى. لا نتحمل مسؤولية ممارسات الخصوصية أو محتوى هذه الجهات الخارجية، ونشجعك على مراجعة سياسات خصوصيتها قبل تقديم أي معلومات لها.')
+      ]),
+      sec('changes','14','التغييرات على هذه السياسة',[
+        p('قد نقوم بتحديث سياسة الخصوصية هذه من وقت لآخر لتعكس تغييرات في ميزات التطبيق أو في القوانين المعمول بها. سيتم الإعلان عن أي تغييرات جوهرية داخل التطبيق. استمرارك في استخدام سبل الهدى بعد دخول التغيير حيّز التنفيذ يُعد موافقة منك على السياسة المحدَّثة.')
+      ]),
+      sec('contact','15','تواصل معنا',[
+        {type:'contact', text:'لأي سؤال أو استفسار أو طلب يتعلق بسياسة الخصوصية هذه أو ببياناتك، تواصل معنا — نقرأ كل رسالة تصلنا.'}
+      ])
+    ]
+  };
+
+  /* ================= ENGLISH ================= */
+  T.en = {
+    dir:'ltr', htmlLang:'en',
+    brandTitle:'Subul Al-Huda', brandTag:'Privacy Policy',
+    heroEyebrow:'Legal document', heroTitle:'Privacy Policy',
+    heroSubtitle:'We take your privacy seriously. This page explains, transparently and in full detail, everything about your data when you use Subul Al-Huda.',
+    badgeEffective:'Effective: August 1, 2026', badgeUpdated:'Last updated: August 2026',
+    tocLabel:'On this page',
+    footerRights:'© 2026 Subul Al-Huda. All rights reserved.',
+    footerTagline:'Built with care to support daily worship and Qur\u2019an memorization.',
+    contactBtn:'Email us',
+    sections:[
+      sec('introduction','01','Introduction',[
+        p('Welcome to Subul Al-Huda ("the App", "we", "us"). We built this app to be your companion for daily worship and Qur\u2019an memorization, and we take the privacy of everyone who uses it seriously. This Privacy Policy explains, in plain language, what information the App accesses, how it is used, and the choices available to you.'),
+        p('By installing or using Subul Al-Huda, you agree to the practices described in this document. If you do not agree, please do not use the App.')
+      ]),
+      sec('effective-date','02','Effective Date',[
+        p('This Privacy Policy is effective as of August 1, 2026, and was last reviewed on the date shown at the top of this page.'),
+        ul(['Effective date: August 1, 2026','Last updated: August 2026','Version: 2.0'])
+      ]),
+      sec('developer-info','03','Developer Information',[
+        p('Subul Al-Huda is developed and maintained by an independent developer dedicated to building trustworthy Islamic educational tools.'),
+        ul(['Application name: Subul Al-Huda (سبل الهدى)','Developer contact: souboulalhouda@gmail.com','Category: Education / Religion & Spirituality'])
+      ]),
+      sec('scope','04','Scope of this Privacy Policy',[
+        p('This Policy applies to the Subul Al-Huda mobile application on all platforms where it is distributed, including Android via Google Play. It does not apply to third-party websites, services, or applications that may be linked from within the App.')
+      ]),
+      sec('data-we-collect','05','Information We Collect',[
+        p('Subul Al-Huda is built around a simple principle: what happens on your device stays on your device. We do not operate servers that receive, log, or store your personal data.'),
+        ul(['We do not require you to create an account.','We do not ask for your name, email address, or phone number.','We do not collect analytics or advertising identifiers.','We do not access your contacts, photos, or files beyond what a specific feature explicitly requires.'])
+      ]),
+      sec('data-not-collected','06','Information We Do Not Collect',[
+        p('To remove any doubt, Subul Al-Huda does not collect, transmit, or store any of the following:'),
+        ul(['Personal identifiers (name, email, phone number)','Precise or approximate location history','Voice recordings from the memorization feature','Advertising or tracking identifiers','Payment or financial information'])
+      ]),
+      sec('permissions','07','Permissions Used',[
+        p('The App requests the following permissions only to power its features, and each one is requested the first time its related feature is actually used:'),
+        permGrid([
+          perm('location','Location','To calculate accurate prayer times and Qibla direction for where you are. Your location is never sent to any server.','Optional'),
+          perm('bell','Notifications','To deliver prayer-time and Adhan reminders at the correct moment.','Optional'),
+          perm('mic','Microphone','Powers the voice memorization feature by matching your recitation entirely on your device. Audio is never uploaded or stored.','Optional'),
+          perm('wifi','Internet','To download books, Qur\u2019an text and audio, and stream live radio.','Required for some features')
+        ]),
+        box('You can change any of these permissions at any time from your device settings. Declining a permission will not prevent you from using the rest of the App.')
+      ]),
+      sec('local-storage','08','Local Data Storage',[
+        p('Any information the App needs to remember about you — such as your preferred reciter, bookmarks, reading progress, display settings, and memorization history — is stored locally on your device using standard on-device storage. This information is never transmitted to us or to any third party, and it is removed automatically when you clear the App\u2019s data or uninstall it.')
+      ]),
+      sec('third-party','09','Third-Party Services',[
+        p('The App may use the following service, which operates under its own independent privacy policy:'),
+        svcList([
+          svc('Google Play Services','Required by Android to install, update, and run the App, and to provide core system functionality.','https://www.google.com','https://policies.google.com/privacy')
+        ])
+      ]),
+      sec('children','10','Children\u2019s Privacy',[
+        p('Subul Al-Huda is designed to be appropriate for users of all ages, including children. Because the App does not collect personal data from any user, no personal data is knowingly collected from children under the age of 13 (or the relevant age of digital consent in your jurisdiction). If you believe a child has provided us with personal information through a support channel such as email, please contact us and we will delete it promptly.')
+      ]),
+      sec('security','11','Security',[
+        p('We take a "less data, less risk" approach to security.'),
+        ul(['No user accounts or passwords exist to be compromised.','No cloud database stores your personal information.','No advertising profile is built or shared about you.','We never sell your personal information to anyone, under any circumstances.','We follow the security guidance published by Google Play and keep the App\u2019s dependencies up to date.']),
+        p('Because so little data ever leaves your device, the App\u2019s attack surface for personal-data breaches is minimal by design.')
+      ]),
+      sec('rights','12','Your Rights',[
+        ul(['Grant or deny any permission at any time from your device settings.','Revoke a previously granted permission without losing access to the rest of the App.','Delete locally stored App data at any time from your device\u2019s application settings.','Clear storage or uninstall the App to remove all local data instantly.','Contact the developer with any privacy question or request.'])
+      ]),
+      sec('external-links','13','External Links',[
+        p('The App may contain links to external websites, live radio streams, or Islamic educational resources hosted by third parties. We are not responsible for the privacy practices or content of these external destinations, and we encourage you to review their privacy policies before providing any information to them.')
+      ]),
+      sec('changes','14','Changes to this Privacy Policy',[
+        p('We may update this Privacy Policy from time to time to reflect changes in the App\u2019s features or in applicable law. Material changes will be announced within the App. Your continued use of Subul Al-Huda after a change becomes effective constitutes your acceptance of the revised Policy.')
+      ]),
+      sec('contact','15','Contact',[
+        {type:'contact', text:'If you have any question, concern, or request regarding this Privacy Policy or your data, please reach out — we read every message.'}
+      ])
+    ]
+  };
+
+  /* ================= FRENCH ================= */
+  T.fr = {
+    dir:'ltr', htmlLang:'fr',
+    brandTitle:'Subul Al-Huda', brandTag:'Politique de confidentialité',
+    heroEyebrow:'Document légal', heroTitle:'Politique de confidentialité',
+    heroSubtitle:'Nous prenons votre vie privée très au sérieux. Cette page explique, en toute transparence, tout ce qui concerne vos données lorsque vous utilisez Subul Al-Huda.',
+    badgeEffective:'En vigueur : 1er août 2026', badgeUpdated:'Dernière mise à jour : août 2026',
+    tocLabel:'Sur cette page',
+    footerRights:'© 2026 Subul Al-Huda. Tous droits réservés.',
+    footerTagline:'Conçu avec soin pour accompagner la pratique religieuse quotidienne et la mémorisation du Coran.',
+    contactBtn:'Nous écrire',
+    sections:[
+      sec('introduction','01','Introduction',[
+        p('Bienvenue dans Subul Al-Huda (« l\u2019Application », « nous »). Nous avons conçu cette application pour accompagner votre pratique religieuse quotidienne et la mémorisation du Coran, et nous prenons la vie privée de chaque utilisateur très au sérieux. Cette politique explique, en termes clairs, quelles informations l\u2019Application consulte, comment elles sont utilisées, et les choix qui vous sont offerts.'),
+        p('En installant ou en utilisant Subul Al-Huda, vous acceptez les pratiques décrites dans ce document. Si vous n\u2019êtes pas d\u2019accord, veuillez ne pas utiliser l\u2019Application.')
+      ]),
+      sec('effective-date','02','Date d\u2019entrée en vigueur',[
+        p('Cette politique de confidentialité entre en vigueur le 1er août 2026 et a été révisée pour la dernière fois à la date indiquée en haut de cette page.'),
+        ul(['Date d\u2019entrée en vigueur : 1er août 2026','Dernière mise à jour : août 2026','Version : 2.0'])
+      ]),
+      sec('developer-info','03','Informations sur le développeur',[
+        p('Subul Al-Huda est développée et maintenue par un développeur indépendant engagé à créer des outils éducatifs islamiques fiables.'),
+        ul(['Nom de l\u2019application : Subul Al-Huda (سبل الهدى)','Contact du développeur : souboulalhouda@gmail.com','Catégorie : Éducation / Religion et spiritualité'])
+      ]),
+      sec('scope','04','Champ d\u2019application',[
+        p('Cette politique s\u2019applique à l\u2019application mobile Subul Al-Huda sur toutes les plateformes où elle est distribuée, y compris Android via Google Play. Elle ne s\u2019applique pas aux sites, services ou applications tiers pouvant être liés depuis l\u2019Application.')
+      ]),
+      sec('data-we-collect','05','Informations que nous traitons',[
+        p('Subul Al-Huda repose sur un principe simple : ce qui se passe sur votre appareil reste sur votre appareil. Nous n\u2019exploitons aucun serveur qui reçoit, enregistre ou stocke vos données personnelles.'),
+        ul(['Aucune création de compte n\u2019est requise.','Nous ne demandons ni votre nom, ni votre e-mail, ni votre numéro de téléphone.','Nous ne collectons aucune donnée analytique ni identifiant publicitaire.','Nous n\u2019accédons à vos contacts, photos ou fichiers que si une fonctionnalité précise l\u2019exige explicitement.'])
+      ]),
+      sec('data-not-collected','06','Informations que nous ne collectons jamais',[
+        p('Pour lever toute ambiguïté, Subul Al-Huda ne collecte, ne transmet ni ne stocke aucune des données suivantes :'),
+        ul(['Identifiants personnels (nom, e-mail, numéro de téléphone)','Historique de localisation précis ou approximatif','Enregistrements vocaux de la fonction de mémorisation','Identifiants publicitaires ou de suivi','Informations de paiement ou financières'])
+      ]),
+      sec('permissions','07','Autorisations utilisées',[
+        p('L\u2019Application demande les autorisations suivantes uniquement pour activer ses fonctionnalités, chacune étant demandée lors de la première utilisation réelle de la fonction concernée :'),
+        permGrid([
+          perm('location','Localisation','Pour calculer précisément les heures de prière et la direction de la Qibla selon votre position. Votre localisation n\u2019est jamais envoyée à un serveur.','Facultatif'),
+          perm('bell','Notifications','Pour envoyer les rappels des heures de prière et de l\u2019Adhan au bon moment.','Facultatif'),
+          perm('mic','Microphone','Alimente la fonction de mémorisation vocale en comparant votre récitation entièrement sur votre appareil. L\u2019audio n\u2019est jamais téléchargé ni stocké.','Facultatif'),
+          perm('wifi','Internet','Pour télécharger des livres, le texte et l\u2019audio du Coran, et écouter la radio en direct.','Requis pour certaines fonctions')
+        ]),
+        box('Vous pouvez modifier ces autorisations à tout moment depuis les réglages de votre appareil. Refuser une autorisation ne vous empêche pas d\u2019utiliser le reste de l\u2019Application.')
+      ]),
+      sec('local-storage','08','Stockage local des données',[
+        p('Toute information dont l\u2019Application a besoin pour se souvenir de vous — récitateur préféré, favoris, progression de lecture, réglages d\u2019affichage, historique de mémorisation — est stockée localement sur votre appareil, via les mécanismes de stockage standards. Ces informations ne sont jamais transmises à nous ni à un tiers, et sont automatiquement supprimées lorsque vous effacez les données de l\u2019Application ou la désinstallez.')
+      ]),
+      sec('third-party','09','Services tiers',[
+        p('L\u2019Application peut utiliser le service suivant, qui applique sa propre politique de confidentialité indépendante :'),
+        svcList([
+          svc('Google Play Services','Requis par Android pour installer, mettre à jour et exécuter l\u2019Application, et pour fournir les fonctionnalités système essentielles.','https://www.google.com','https://policies.google.com/privacy')
+        ])
+      ]),
+      sec('children','10','Confidentialité des enfants',[
+        p('Subul Al-Huda est conçue pour convenir à tous les âges, y compris aux enfants. Comme l\u2019Application ne collecte aucune donnée personnelle auprès d\u2019aucun utilisateur, aucune donnée personnelle n\u2019est sciemment collectée auprès d\u2019enfants de moins de 13 ans (ou l\u2019âge légal de consentement numérique applicable dans votre juridiction). Si vous pensez qu\u2019un enfant nous a communiqué des informations personnelles via un canal de support tel que l\u2019e-mail, veuillez nous contacter afin que nous les supprimions rapidement.')
+      ]),
+      sec('security','11','Sécurité',[
+        p('Nous appliquons le principe « moins de données, moins de risques » en matière de sécurité.'),
+        ul(['Aucun compte utilisateur ni mot de passe susceptible d\u2019être compromis.','Aucune base de données cloud ne stocke vos informations personnelles.','Aucun profil publicitaire n\u2019est constitué ni partagé à votre sujet.','Nous ne vendons jamais vos données personnelles, en aucune circonstance.','Nous suivons les recommandations de sécurité publiées par Google Play et maintenons les dépendances de l\u2019Application à jour.']),
+        p('Comme très peu de données quittent votre appareil, la surface d\u2019attaque en matière de fuite de données personnelles est minimale par conception.')
+      ]),
+      sec('rights','12','Vos droits',[
+        ul(['Accorder ou refuser toute autorisation à tout moment depuis les réglages de votre appareil.','Révoquer une autorisation précédemment accordée sans perdre l\u2019accès au reste de l\u2019Application.','Supprimer à tout moment les données locales de l\u2019Application depuis les réglages de votre appareil.','Vider le stockage ou désinstaller l\u2019Application pour supprimer instantanément toutes les données locales.','Contacter le développeur pour toute question ou demande relative à la confidentialité.'])
+      ]),
+      sec('external-links','13','Liens externes',[
+        p('L\u2019Application peut contenir des liens vers des sites externes, des flux de radio en direct, ou des ressources éducatives islamiques hébergées par des tiers. Nous ne sommes pas responsables des pratiques de confidentialité ou du contenu de ces destinations externes, et nous vous encourageons à consulter leurs politiques de confidentialité avant de leur fournir toute information.')
+      ]),
+      sec('changes','14','Modifications de cette politique',[
+        p('Nous pouvons mettre à jour cette politique de confidentialité de temps à autre afin de refléter des évolutions des fonctionnalités de l\u2019Application ou de la législation applicable. Tout changement important sera annoncé au sein de l\u2019Application. Votre utilisation continue de Subul Al-Huda après l\u2019entrée en vigueur d\u2019une modification constitue votre acceptation de la politique révisée.')
+      ]),
+      sec('contact','15','Contact',[
+        {type:'contact', text:'Pour toute question, préoccupation ou demande concernant cette politique de confidentialité ou vos données, contactez-nous — nous lisons chaque message.'}
+      ])
+    ]
+  };
+
+  /* ================= TURKISH ================= */
+  T.tr = {
+    dir:'ltr', htmlLang:'tr',
+    brandTitle:'Subul Al-Huda', brandTag:'Gizlilik Politikası',
+    heroEyebrow:'Yasal belge', heroTitle:'Gizlilik Politikası',
+    heroSubtitle:'Gizliliğinizi ciddiye alıyoruz. Bu sayfa, Subul Al-Huda uygulamasını kullanırken verilerinizle ilgili her şeyi şeffaf ve ayrıntılı biçimde açıklar.',
+    badgeEffective:'Yürürlük tarihi: 1 Ağustos 2026', badgeUpdated:'Son güncelleme: Ağustos 2026',
+    tocLabel:'Bu sayfada',
+    footerRights:'© 2026 Subul Al-Huda. Tüm hakları saklıdır.',
+    footerTagline:'Günlük ibadet ve Kur\u2019an ezberi için özenle geliştirildi.',
+    contactBtn:'Bize e-posta gönderin',
+    sections:[
+      sec('introduction','01','Giriş',[
+        p('Subul Al-Huda\u2019ya ("Uygulama", "biz") hoş geldiniz. Bu uygulamayı günlük ibadetinize ve Kur\u2019an ezberlemenize eşlik etmesi için geliştirdik ve uygulamayı kullanan herkesin gizliliğini ciddiye alıyoruz. Bu Gizlilik Politikası, Uygulamanın hangi bilgilere eriştiğini, bunların nasıl kullanıldığını ve sizin için mevcut seçenekleri sade bir dille açıklar.'),
+        p('Subul Al-Huda\u2019yı yükleyerek veya kullanarak bu belgede açıklanan uygulamaları kabul etmiş olursunuz. Kabul etmiyorsanız, lütfen Uygulamayı kullanmayın.')
+      ]),
+      sec('effective-date','02','Yürürlük Tarihi',[
+        p('Bu Gizlilik Politikası 1 Ağustos 2026 tarihinden itibaren yürürlüktedir ve en son bu sayfanın üst kısmında belirtilen tarihte gözden geçirilmiştir.'),
+        ul(['Yürürlük tarihi: 1 Ağustos 2026','Son güncelleme: Ağustos 2026','Sürüm: 2.0'])
+      ]),
+      sec('developer-info','03','Geliştirici Bilgileri',[
+        p('Subul Al-Huda, güvenilir İslami eğitim araçları geliştirmeye adanmış bağımsız bir geliştirici tarafından geliştirilmekte ve sürdürülmektedir.'),
+        ul(['Uygulama adı: Subul Al-Huda (سبل الهدى)','Geliştirici iletişim: souboulalhouda@gmail.com','Kategori: Eğitim / Din ve Maneviyat'])
+      ]),
+      sec('scope','04','Bu Politikanın Kapsamı',[
+        p('Bu Politika, Google Play üzerinden Android dahil, dağıtıldığı tüm platformlardaki Subul Al-Huda mobil uygulaması için geçerlidir. Uygulama içinden bağlantı verilebilecek üçüncü taraf web siteleri, hizmetler veya uygulamalar için geçerli değildir.')
+      ]),
+      sec('data-we-collect','05','Eriştiğimiz Bilgiler',[
+        p('Subul Al-Huda basit bir ilke üzerine kuruludur: cihazınızda olan, cihazınızda kalır. Kişisel verilerinizi alan, kaydeden veya saklayan herhangi bir sunucu işletmiyoruz.'),
+        ul(['Hesap oluşturmanızı gerektirmiyoruz.','Adınızı, e-posta adresinizi veya telefon numaranızı istemiyoruz.','Analiz verisi veya reklam kimliği toplamıyoruz.','Belirli bir özelliğin açıkça gerektirdiği durumlar dışında kişilerinize, fotoğraflarınıza veya dosyalarınıza erişmiyoruz.'])
+      ]),
+      sec('data-not-collected','06','Asla Toplamadığımız Bilgiler',[
+        p('Herhangi bir şüpheyi ortadan kaldırmak için, Subul Al-Huda aşağıdakilerden hiçbirini toplamaz, iletmez veya saklamaz:'),
+        ul(['Kişisel tanımlayıcılar (ad, e-posta, telefon numarası)','Kesin veya yaklaşık konum geçmişi','Ezberleme özelliğinden alınan ses kayıtları','Reklam veya takip kimlikleri','Ödeme veya finansal bilgiler'])
+      ]),
+      sec('permissions','07','Kullanılan İzinler',[
+        p('Uygulama, aşağıdaki izinleri yalnızca ilgili özelliği çalıştırmak için ister ve her izin, ilgili özellik gerçekten ilk kullanıldığında istenir:'),
+        permGrid([
+          perm('location','Konum','Bulunduğunuz yere göre doğru namaz vakitlerini ve Kıble yönünü hesaplamak için. Konumunuz hiçbir sunucuya gönderilmez.','İsteğe bağlı'),
+          perm('bell','Bildirimler','Namaz vakti ve Ezan hatırlatmalarını doğru zamanda iletmek için.','İsteğe bağlı'),
+          perm('mic','Mikrofon','Okuduğunuzu tamamen cihazınızda karşılaştırarak sesli ezberleme özelliğini çalıştırır. Ses asla yüklenmez veya saklanmaz.','İsteğe bağlı'),
+          perm('wifi','İnternet','Kitapları, Kur\u2019an metnini ve seslerini indirmek ve canlı radyo dinlemek için.','Bazı özellikler için gerekli')
+        ]),
+        box('Bu izinleri istediğiniz zaman cihaz ayarlarınızdan değiştirebilirsiniz. Bir izni reddetmeniz, Uygulamanın diğer bölümlerini kullanmanızı engellemez.')
+      ]),
+      sec('local-storage','08','Yerel Veri Saklama',[
+        p('Uygulamanın sizinle ilgili hatırlaması gereken bilgiler — tercih ettiğiniz hafız, yer imleri, okuma ilerlemesi, görüntü ayarları ve ezber geçmişi gibi — standart cihaz içi depolama kullanılarak yalnızca cihazınızda yerel olarak saklanır. Bu bilgiler bize veya herhangi bir üçüncü tarafa asla iletilmez ve Uygulama verilerini temizlediğinizde veya uygulamayı kaldırdığınızda otomatik olarak silinir.')
+      ]),
+      sec('third-party','09','Üçüncü Taraf Hizmetleri',[
+        p('Uygulama, kendi bağımsız gizlilik politikası kapsamında çalışan aşağıdaki hizmeti kullanabilir:'),
+        svcList([
+          svc('Google Play Hizmetleri','Uygulamayı yüklemek, güncellemek, çalıştırmak ve temel sistem işlevlerini sağlamak için Android tarafından gereklidir.','https://www.google.com','https://policies.google.com/privacy')
+        ])
+      ]),
+      sec('children','10','Çocukların Gizliliği',[
+        p('Subul Al-Huda, çocuklar da dahil olmak üzere her yaş grubu için uygun olacak şekilde tasarlanmıştır. Uygulama hiçbir kullanıcıdan kişisel veri toplamadığından, 13 yaşın altındaki çocuklardan (veya bulunduğunuz yargı alanındaki ilgili dijital onay yaşından) bilerek herhangi bir kişisel veri toplanmamaktadır. Bir çocuğun e-posta gibi bir destek kanalı üzerinden bize kişisel bilgi verdiğini düşünüyorsanız, lütfen bizimle iletişime geçin; bu bilgiyi derhal sileriz.')
+      ]),
+      sec('security','11','Güvenlik',[
+        p('Güvenlik konusunda "daha az veri, daha az risk" yaklaşımını benimsiyoruz.'),
+        ul(['Ele geçirilebilecek kullanıcı hesabı veya şifre bulunmuyor.','Kişisel bilgilerinizi saklayan herhangi bir bulut veritabanı yok.','Hakkınızda hiçbir reklam profili oluşturulmuyor veya paylaşılmıyor.','Kişisel verilerinizi hiçbir koşulda kimseye satmıyoruz.','Google Play tarafından yayınlanan güvenlik önerilerini takip ediyor ve Uygulamanın bağımlılıklarını güncel tutuyoruz.']),
+        p('Cihazınızdan çok az veri ayrıldığı için, kişisel veri sızıntılarına yönelik saldırı yüzeyi tasarım itibarıyla minimum düzeydedir.')
+      ]),
+      sec('rights','12','Haklarınız',[
+        ul(['Cihaz ayarlarınızdan istediğiniz zaman herhangi bir izni verebilir veya reddedebilirsiniz.','Daha önce verdiğiniz bir izni, Uygulamanın diğer bölümlerine erişiminizi kaybetmeden geri alabilirsiniz.','Cihazınızın uygulama ayarlarından istediğiniz zaman yerel olarak saklanan Uygulama verilerini silebilirsiniz.','Depolamayı temizleyerek veya Uygulamayı kaldırarak tüm yerel verileri anında silebilirsiniz.','Gizlilikle ilgili her soru veya talep için geliştiriciyle iletişime geçebilirsiniz.'])
+      ]),
+      sec('external-links','13','Harici Bağlantılar',[
+        p('Uygulama, harici web sitelerine, canlı radyo yayınlarına veya üçüncü taraflarca sunulan İslami eğitim kaynaklarına bağlantılar içerebilir. Bu harici hedeflerin gizlilik uygulamalarından veya içeriğinden sorumlu değiliz ve herhangi bir bilgi vermeden önce gizlilik politikalarını incelemenizi öneririz.')
+      ]),
+      sec('changes','14','Bu Politikadaki Değişiklikler',[
+        p('Bu Gizlilik Politikasını, Uygulamanın özelliklerindeki veya geçerli yasalardaki değişiklikleri yansıtmak için zaman zaman güncelleyebiliriz. Önemli değişiklikler Uygulama içinde duyurulacaktır. Bir değişiklik yürürlüğe girdikten sonra Subul Al-Huda\u2019yı kullanmaya devam etmeniz, güncellenmiş Politikayı kabul ettiğiniz anlamına gelir.')
+      ]),
+      sec('contact','15','İletişim',[
+        {type:'contact', text:'Bu Gizlilik Politikası veya verilerinizle ilgili herhangi bir sorunuz, kaygınız veya talebiniz varsa lütfen bizimle iletişime geçin — her mesajı okuyoruz.'}
+      ])
+    ]
+  };
+
+  /* ================= RENDER ================= */
+  var current = 'ar';
+  var els = {
+    body: document.body,
+    html: document.documentElement,
+    brandTitle: document.getElementById('brandTitle'),
+    brandTag: document.getElementById('brandTag'),
+    heroEyebrow: document.getElementById('heroEyebrow'),
+    heroTitle: document.getElementById('heroTitle'),
+    heroSubtitle: document.getElementById('heroSubtitle'),
+    badgeEffective: document.getElementById('badgeEffective'),
+    badgeUpdated: document.getElementById('badgeUpdated'),
+    tocLabel: document.getElementById('tocLabel'),
+    tocList: document.getElementById('tocList'),
+    main: document.getElementById('mainContent'),
+    footerRights: document.getElementById('footerRights'),
+    footerTagline: document.getElementById('footerTagline')
+  };
+
+  function esc(str){
+    var d = document.createElement('div');
+    d.textContent = str;
+    return d.innerHTML;
   }
+
+  function renderBlock(b){
+    if(b.type === 'p'){
+      return '<p>' + esc(b.text) + '</p>';
+    }
+    if(b.type === 'list'){
+      return '<ul class="p-list">' + b.items.map(function(i){ return '<li>'+esc(i)+'</li>'; }).join('') + '</ul>';
+    }
+    if(b.type === 'box'){
+      return '<div class="highlight-box">' + icons.check + '<p>'+esc(b.text)+'</p></div>';
+    }
+    if(b.type === 'permissions'){
+      return '<div class="perm-grid">' + b.items.map(function(it){
+        return '<div class="perm-card">'+
+          '<div class="perm-head"><span class="perm-icon">'+icons[it.icon]+'</span><strong>'+esc(it.name)+'</strong></div>'+
+          '<p>'+esc(it.desc)+'</p>'+
+          '<span class="perm-tag">'+esc(it.tag)+'</span>'+
+        '</div>';
+      }).join('') + '</div>';
+    }
+    if(b.type === 'services'){
+      return b.items.map(function(s){
+        return '<div class="service-card">'+
+          '<strong>'+esc(s.name)+'</strong>'+
+          '<p>'+esc(s.purpose)+'</p>'+
+          '<div class="service-links">'+
+            '<a href="'+s.website+'" target="_blank" rel="noopener noreferrer">'+ (current==='ar' ? 'الموقع الرسمي' : current==='fr' ? 'Site officiel' : current==='tr' ? 'Resmi site' : 'Official website') +' ↗</a>'+
+            '<a href="'+s.policy+'" target="_blank" rel="noopener noreferrer">'+ (current==='ar' ? 'سياسة الخصوصية' : current==='fr' ? 'Politique de confidentialité' : current==='tr' ? 'Gizlilik politikası' : 'Privacy policy') +' ↗</a>'+
+          '</div>'+
+        '</div>';
+      }).join('');
+    }
+    if(b.type === 'contact'){
+      return '<div class="contact-card">'+
+        '<h2 data-role="display">'+ (current==='ar' ? 'تواصل معنا' : current==='fr' ? 'Contactez-nous' : current==='tr' ? 'Bize Ulaşın' : 'Contact Us') +'</h2>'+
+        '<p>'+esc(b.text)+'</p>'+
+        '<a class="contact-btn" href="mailto:souboulalhouda@gmail.com">✉ souboulalhouda@gmail.com</a>'+
+      '</div>';
+    }
+    return '';
+  }
+
+  function render(lang){
+    var d = T[lang];
+    current = lang;
+    els.body.setAttribute('data-lang', lang);
+    els.html.setAttribute('lang', d.htmlLang);
+    els.html.setAttribute('dir', d.dir);
+
+    els.brandTitle.textContent = d.brandTitle;
+    els.brandTag.textContent = d.brandTag;
+    els.heroEyebrow.textContent = d.heroEyebrow;
+    els.heroTitle.textContent = d.heroTitle;
+    els.heroSubtitle.textContent = d.heroSubtitle;
+    els.badgeEffective.innerHTML = d.badgeEffective;
+    els.badgeUpdated.innerHTML = d.badgeUpdated;
+    els.tocLabel.textContent = d.tocLabel;
+    els.footerRights.textContent = d.footerRights;
+    els.footerTagline.textContent = d.footerTagline;
+
+    els.tocList.innerHTML = d.sections.map(function(s){
+      return '<li><a href="#'+s.id+'" data-target="'+s.id+'">'+esc(s.title)+'</a></li>';
+    }).join('');
+
+    els.main.innerHTML = d.sections.map(function(s){
+      var body = s.blocks.map(renderBlock).join('');
+      var isContact = s.blocks.length && s.blocks[0].type === 'contact';
+      if(isContact){
+        return '<section id="'+s.id+'" class="policy-section" aria-labelledby="'+s.id+'-h">'+
+          '<span class="section-num">'+s.num+'</span>'+ body +'</section>';
+      }
+      return '<section id="'+s.id+'" class="policy-section" aria-labelledby="'+s.id+'-h">'+
+        '<span class="section-num">'+s.num+'</span>'+
+        '<h2 id="'+s.id+'-h" data-role="display">'+esc(s.title)+'</h2>'+
+        body +
+      '</section>';
+    }).join('');
+
+    document.title = (lang==='ar' ? 'سياسة الخصوصية | ' : 'Privacy Policy | ') + d.brandTitle;
+
+    document.querySelectorAll('.lang-btn').forEach(function(btn){
+      var active = btn.getAttribute('data-lang') === lang;
+      btn.classList.toggle('active', active);
+      btn.setAttribute('aria-pressed', active ? 'true' : 'false');
+    });
+
+    setupScrollSpy();
+  }
+
+  document.querySelectorAll('.lang-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      render(btn.getAttribute('data-lang'));
+      window.scrollTo({top:0, behavior:'smooth'});
+    });
+  });
+
+  /* smooth anchor scroll (accounts for RTL/LTR, native anchor works fine) */
+  els.tocList.addEventListener('click', function(e){
+    var a = e.target.closest('a');
+    if(!a) return;
+    e.preventDefault();
+    var target = document.getElementById(a.getAttribute('data-target'));
+    if(target){ target.scrollIntoView({behavior:'smooth', block:'start'}); }
+  });
+
+  /* progress bar */
+  var progressBar = document.getElementById('progressBar');
+  function updateProgress(){
+    var h = document.documentElement;
+    var scrollTop = h.scrollTop || document.body.scrollTop;
+    var scrollHeight = (h.scrollHeight || document.body.scrollHeight) - h.clientHeight;
+    var pct = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
+    progressBar.style.width = pct + '%';
+  }
+
+  /* back to top */
+  var backToTop = document.getElementById('backToTop');
+  function updateBackToTop(){
+    if(window.scrollY > 420){ backToTop.classList.add('visible'); }
+    else{ backToTop.classList.remove('visible'); }
+  }
+  backToTop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  window.addEventListener('scroll', function(){
+    updateProgress();
+    updateBackToTop();
+  }, {passive:true});
+
+  /* scroll spy */
+  var observer = null;
+  function setupScrollSpy(){
+    if(observer){ observer.disconnect(); }
+    var sections = document.querySelectorAll('.policy-section');
+    var links = document.querySelectorAll('.toc li a');
+    observer = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        var link = document.querySelector('.toc li a[data-target="'+entry.target.id+'"]');
+        if(!link) return;
+        if(entry.isIntersecting){
+          links.forEach(function(l){ l.classList.remove('active'); });
+          link.classList.add('active');
+        }
+      });
+    }, {rootMargin:'-15% 0px -70% 0px', threshold:0});
+    sections.forEach(function(s){ observer.observe(s); });
+  }
+
+  render('ar');
+  updateProgress();
+  updateBackToTop();
+})();
 </script>
 </body>
 </html>
-
